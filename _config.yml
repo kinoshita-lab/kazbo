@@ -7,10 +7,10 @@
 
 # Site settings
 title: kazbo memos
-email: saita@kinoshita-lab.org
+email: 
 description: "hoge fuga"
 baseurl: "/kazbo" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://kinoshita-lab.github.io/kazbo/" # the base hostname & protocol for your site
 twitter_username: kazbo
 github_username:  kinoshita-lab
 
