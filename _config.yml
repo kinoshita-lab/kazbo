@@ -6,13 +6,18 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: kazbo memos
-email: 
-description: "hoge fuga"
+title: "kazbo memos"
+email:
+description: "memoいろいろ"
 baseurl: "/kazbo" # the subpath of your site, e.g. /blog
 url: "http://kinoshita-lab.github.io/kazbo/" # the base hostname & protocol for your site
 twitter_username: kazbo
 github_username:  kinoshita-lab
 
+gems: [jekyll-paginate]
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
 # Build settings
 markdown: kramdown
+highlighter: rouge
