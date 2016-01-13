@@ -20,4 +20,4 @@ paginate: 10
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
