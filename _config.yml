@@ -8,7 +8,7 @@
 # Site settings
 title: kazbo memos
 email: saita@kinoshita-lab.org
-description: > hoge fuga
+description: "hoge fuga"
 baseurl: "/kazbo" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: kazbo
