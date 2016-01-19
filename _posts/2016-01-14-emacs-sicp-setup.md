@@ -47,7 +47,7 @@ quackそのままだとリンク切れのマニュアルとかあるし、使わ
 (custom-set-variables
  '(quack-manuals
    (quote
-	((r6rs "R5RS" "http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-2.html#node_toc_start" nil)
+	((r6rs "R6RS" "http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-2.html#node_toc_start" nil)
 	 (gauche "Gauche Reference Manual" "http://practical-scheme.net/gauche/man/gauche-refj.html" nil)
 	 (tspl "Scheme Programming Language (Dybvig)" "http://www.scheme.com/tspl/" nil)
 	 (sicp "Structure and Interpretation of Computer Programs(JP)" "http://sicp.iijlab.net/fulltext/xcont.html" nil))))
