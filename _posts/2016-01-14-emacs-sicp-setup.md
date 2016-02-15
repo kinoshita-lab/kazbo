@@ -14,13 +14,13 @@ emacsには24.4以降[eww](https://www.gnu.org/software/emacs/manual/html_node/e
 というWEBブラウザが入っている。これemacs内のデフォルトブラウザに指定すればquackのマニュアル類はemacs上で見ることができるようになる。
 
 まずewwの設定。emacs内でのデフォルトブラウザをewwにする。
-{% highlight emacs %}
+{% highlight emacs-lisp %}
 (setq browse-url-browser-function 'eww-browse-url)
 {% endhighlight %}
 
 
 [Emacs24.4組み込みブラウザewwで目の疲れを1/10にする方法](http://rubikitch.com/2014/11/19/eww-nocolor/)の設定を追加。
-{% highlight emacs %}
+{% highlight emacs-lisp %}
 (defvar eww-disable-colorize t)
 (defun shr-colorize-region--disable (orig start end fg &optional bg &rest _)
   (unless eww-disable-colorize
@@ -42,7 +42,7 @@ emacsには24.4以降[eww](https://www.gnu.org/software/emacs/manual/html_node/e
 quackの設定関係は、M-x customizeで入れていった。関係ありそうなところを抜き出すとこんな感じ。
 quackそのままだとリンク切れのマニュアルとかあるし、使わないのが大量に入ってる。
 日本語版SICPとかgaucheのマニュアルは日本語のやつにしたりした。
-{% highlight emacs %}
+{% highlight emacs-lisp %}
 ;; M-x customizes
 (custom-set-variables
  '(quack-manuals

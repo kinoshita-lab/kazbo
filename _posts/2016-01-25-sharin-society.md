@@ -21,3 +21,5 @@ tags: sharin
     Fleck E.S.C (electrix records / shameless today)
     Manksy
     Sharin
+
+ライブ中に楽器が壊れたりしてあせった。しかもマスターテンポ作る装置。予備のテンポ生成回路があって助かった。
