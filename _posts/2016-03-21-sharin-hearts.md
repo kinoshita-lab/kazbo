@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  車輪ライブ@ぽら企画 「PANDA DE PORAFES 5/5
+title:  車輪ライブ@ぽら企画 「PANDA DE PORAFES」 5/5
 date:   2016-03-21
 tags: sharin
 ---
