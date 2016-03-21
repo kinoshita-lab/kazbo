@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  車輪の再発明ライブ@circuits 2016/2/20
+title:  車輪ライブ@circuits 2016/2/20
 date:   2016-02-15
 tags: sharin
 ---

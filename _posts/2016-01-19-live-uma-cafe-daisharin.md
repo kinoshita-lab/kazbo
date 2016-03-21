@@ -12,3 +12,7 @@ uma cafeで開催中の大城 真 「Lost Mobile 2」のクロージングで大
     スタート 15:30 ～
 
     入場料 1000円（＋1オーダー）
+
+
+ご来場くださったみなさまありがとうございました。当日のライブの様子はこんな感じです。友達の家で機材いじってるみたい。
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SqdmMfJGT2o" frameborder="0" allowfullscreen></iframe>
