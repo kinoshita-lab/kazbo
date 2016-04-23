@@ -2,7 +2,7 @@
 layout: post
 title:  emacsに引きこもる
 date:   2016-01-14
-tags: sicp
+tags: sicp TIL
 ---
 SICPやるときに色々とアプリケーション切り替えるのがめんどくさい。emacsだけで全部終わればいいのに。
 
