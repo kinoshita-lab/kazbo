@@ -20,3 +20,5 @@ github:
  gems:
    - jekyll-coffeescript
    - jekyll-paginate
+
+theme: jekyll-theme-hacker
