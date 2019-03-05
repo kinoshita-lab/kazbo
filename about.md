@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-ほげふが。
+kazboの活動とか、何かを調べたメモ的なものです。
