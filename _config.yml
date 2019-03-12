@@ -49,9 +49,5 @@ github:
  gems:
    - jekyll-coffeescript
    - jekyll-paginate
-<<<<<<< HEAD
- baseurl: "/kazbo"
-=======
->>>>>>> 4d08b6dfc13e3cb0c029788fd197bbdaea0df3a1
 
 theme: jekyll-theme-hacker
