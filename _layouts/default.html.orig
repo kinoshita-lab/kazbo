@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "ja_JP" }}">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +8,23 @@
 
 {% seo %}
   </head>
-
+  {{ site }}
   <body>
-
     <header>
       <div class="container">
-        <a class="page-title" href="{{site.baseurl}}/"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
+        <a class="page-title" href="{{ my_page.url | prepend: site.baseurl }}"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+
         <div class="trigger">
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-              {% endif %}
-           {% endfor %}
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+         {% endfor %}
         </div>
       </div>
     </header>
-    
 
     <div class="container">
       <section id="main_content">
