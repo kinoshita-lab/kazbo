@@ -2,7 +2,7 @@
 layout: post
 title:  SICPをやったまとめ
 date:  2019-03-13
-tags: sicp, TIL
+tags: sicp TIL
 ---
 やりながらメモしたことをとりあえず並べておく。ちょいちょい手なおしが入ると思う。
 
