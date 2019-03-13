@@ -19,12 +19,12 @@ Teensy3.6のDAC0, DAC1から音を出すには、 output セクションにあ�
 
 つまり、
 
-![ng]({{ site.url }}/images/teensy_ng_connection.png)
+![ng]({{ site.baseurl }}/images/teensy_ng_connection.png)
 
 こういうことは画面上では可能だが、実際にはこうするとDAC1からは音は出ない。
 
 こういう風にすることで、両方から音が出るようになった(dacsの2つある入力のうち、上がDAC0、下がDAC1)。
-![ok]({{ site.url }}/images/teensy_ok_connection.png)
+![ok]({{ site.baseurl }}/images/teensy_ok_connection.png)
 
 後々、パンニングとかを実装したくなった時はどうしたらいいのだろう？というのがちょっと気になった。
 
