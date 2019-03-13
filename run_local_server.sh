@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-bundle exec jekyll serve --baseurl=""
+bundle exec jekyll serve
