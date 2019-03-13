@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  BBBでNxPC.Live Vol.35に出演します
+title:  3/16 BBBでNxPC.Live Vol.35に出演します@shibuya circus
 date:  2019-03-13
 tags: BBB
 ---

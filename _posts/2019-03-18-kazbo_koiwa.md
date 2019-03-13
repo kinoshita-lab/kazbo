@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  fuelphonic presents UMAI DEAI KOIWA vol.1 に出演します。
+title:  3/18 fuelphonic presents UMAI DEAI KOIWA vol.1 に出演します。 @KOIWA_BUSHBASH
 date:  2019-03-13
 tags: solowork
 ---
