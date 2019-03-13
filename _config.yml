@@ -17,7 +17,7 @@ title: kazbo memos
 email: saita@kinoshita-lab.org
 description: >- # this means to ignore newlines until "baseurl:"
   kazboのいろいろ
-baseurl: "/kazbo" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kazbo
 github_username:  kinoshita-lab
@@ -44,6 +44,7 @@ google_analytics: UA-46054731-1
 #   - vendor/gems/
 #   - vendor/ruby/
 github:
+ baseurl: "/kazbo" # the subpath of your site, e.g. /blog
  kramdown:
    input: GFM
    hard_wrap: false
