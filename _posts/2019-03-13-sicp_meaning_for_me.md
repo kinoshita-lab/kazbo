@@ -37,8 +37,7 @@ SICPを単に「読んだ」だけだと、少なくとも問題を解けるよ�
 自分が問題を解くことで得られた考えかたは、著者のものとは異なるかもしれないが、少なくとも問題を解くことはできる、ある程度有効なものができているはずだ。
 
 なんかそのあたりのことを考えていたときのtweet。
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">[SICP] また1つ、見えていなかった何かがわかりつつある。このまま進めば解答できるのだろうか。気づいたけど、解答できたところでその問いに完全に答えることにはならないのだろう。</p>&mdash; kaz SAITA@野生 (@kazbo) <a href="https://twitter.com/kazbo/status/1058327378068295681?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">[SICP] また1つ、見えていなかった何かがわかりつつある。このまま進めば解答できるのだろうか。気づいたけど、解答できたところでその問いに完全に答えることにはならないのだろう。</p>&mdash; kaz SAITA@野生 (@kazbo) <a href="https://twitter.com/kazbo/status/1058327378068295681?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">[SICP] また1つ、見えていなかった何かがわかりつつある。このまま進めば解答できるのだろうか。気づいたけど、解答できたところでその問いに完全に答えることにはならないのだろう。</p>&mdash; kaz SAITA@野生 (@kazbo) <a href="https://twitter.com/kazbo/status/1058327378068295681?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 問題をとくためにやったこと
 SICPの問題は、ものによってはかなり規模が大きいものがある。それを解くにあたっては、こんなことをやってみていた。
