@@ -9,7 +9,7 @@ BBBでライブします。新型を作らなければ…
 
 [イベントの詳細はこちらです](https://www.facebook.com/events/246603012955236/)
 
-[Peatixのチケットはこちらです]（https://npclivevol35.peatix.com/）
+[Peatixのチケットはこちらです](https://npclivevol35.peatix.com/)
 
 ```
 3月16日(土)に、Circus TokyoにてNxPC.Live Vol.35を行います🔊
