@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: kazbo memos
-email: saita@kinoshita-lab.org
+email: saita[at]kinoshita-lab.org
 description: >- # this means to ignore newlines until "baseurl:"
   kazboのいろいろ
 baseurl: "/kazbo" # the subpath of your site, e.g. /blog
@@ -31,6 +31,10 @@ highlighter: rouge
 plugins:
   - jekyll-feed
 google_analytics: UA-46054731-1
+
+social:
+  twitter: kazbo
+  facebook: kazukisaita
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
