@@ -21,6 +21,7 @@ baseurl: "/kazbo" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kazbo
 github_username:  kinoshita-lab
+instagram_username: kazbo
 lang: ja-JP
 # Build settings
 markdown: kramdown
