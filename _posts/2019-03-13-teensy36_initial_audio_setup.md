@@ -15,18 +15,6 @@ BBBのライブで使うために[teensy3.6](https://www.pjrc.com/store/teensy36
 [https://www.pjrc.com/teensy/gui/index.html](https://www.pjrc.com/teensy/gui/index.html)でパッチを組んでExportボタンを押す。
 
 Teensy3.6のDAC0, DAC1から音を出すには、 output セクションにある "dacs" を使う。**dacではない**ので注意。
-動かしてみて判明したのだけど、dacsにある2つの入力には別々のソースを入れる必要があるようだ。
-
-つまり、
-
-![ng]({{ site.baseurl }}/images/teensy_ng_connection.png)
-
-こういうことは画面上では可能だが、実際にはこうするとDAC1からは音は出ない。
-
-こういう風にすることで、両方から音が出るようになった(dacsの2つある入力のうち、上がDAC0、下がDAC1)。
-![ok]({{ site.baseurl }}/images/teensy_ok_connection.png)
-
-後々、パンニングとかを実装したくなった時はどうしたらいいのだろう？というのがちょっと気になった。
 
 
 ## Arduino IDEでスケッチを書く
