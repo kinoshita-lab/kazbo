@@ -2,7 +2,7 @@
 layout: post
 title:  MIDI野郎キット スイッチサイエンスさんで販売開始しました
 date:  2019-11-07
-tags: product, kinoshita-lab
+tags: product kinoshita-lab
 ---
 これまで手売り、[twitter DM](https://twitter.com/kazbo)での郵送、[高円寺円盤](https://twitter.com/enban_rikurosha)での販売のみでしたが、ようやくスイッチサイエンスさんでの販売を始めました。
 8月の発表以降、「いつかやろう」と思っていたのですがなかなか手がまわらず、発売から大幅に時間がかかってしまい、すみません。
