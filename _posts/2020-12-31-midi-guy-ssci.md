@@ -1,9 +1,16 @@
 ---
 layout: post
 title:  MIDI野郎キット スイッチサイエンスさんで販売開始しました
-date:  2019-11-07
+date:  2020-12-31
 tags: product kinoshita-lab
 ---
+こちらのポストが最新になるように日付を変更しました。
+
+update:
+- 2019/12/27 matrixsynthに掲載されていました。動画は[yebisu303](https://twitter.com/Yebisu303)さんです！ [Kinoshita Lab MIDI-guy Mini DIY Sound Module](https://www.matrixsynth.com/2019/09/kinoshita-lab-midi-guy-mini-diy-sound.html)
+- 2019/12/9 Start international sales! Please check [Switch Science International Sales Site](https://international.switch-science.com/catalog/5914/)
+
+
 これまで手売り、[twitter DM](https://twitter.com/kazbo)での郵送、[高円寺円盤](https://twitter.com/enban_rikurosha)での販売のみでしたが、ようやくスイッチサイエンスさんでの販売を始めました。
 8月の発表以降、「いつかやろう」と思っていたのですがなかなか手がまわらず、発売から大幅に時間がかかってしまい、すみません。
 
