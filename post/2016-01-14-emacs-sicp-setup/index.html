@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.69.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>emacsに引きこもる&nbsp;&ndash;&nbsp;kazbo memos</title><link rel="stylesheet" href="/kazbo/css/core.min.8b22e64474b0e772dd0b8c84f0014f61c2a49cadd2c4ca65376bccafa1fc90303b2de2269c5f92d1cef85d594700bbe5.css" integrity="sha384-iyLmRHSw53LdC4yE8AFPYcKknK3SxMplN2vMr6H8kDA7LeImnF&#43;S0c74XVlHALvl"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="emacsに引きこもる" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/kazbo/"><span class="site name">kazbo memos</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/kazbo/categories/">Categories</a><a class="nav item" href="/kazbo/tags/">Tags</a><a class="nav item" href="/kazbo/about">About</a></nav></div></span></div><div class="site slogan"><span class="title">whatever can make two ears of corn</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">emacsに引きこもる</h1><p class="article date">2016-01-14</p></section><article class="article markdown-body"><p>SICPやるときに色々とアプリケーション切り替えるのがめんどくさい。emacsだけで全部終わればいいのに。</p>
+<p>schemeをemacsで使うときに便利な<a href="http://www.neilvandyke.org/quack/"target="_blank">quack.el</a>。
+これ使うとマニュアルへのリンクがメニューにできて、クリックするとブラウザが開いて表示される。
+マニュアル類は自分で追加や削除ができる。</p>
+<p>emacsには24.4以降<a href="https://www.gnu.org/software/emacs/manual/html_node/eww/index.html#Top"target="_blank">eww</a>
+というWEBブラウザが入っている。これemacs内のデフォルトブラウザに指定すればquackのマニュアル類はemacs上で見ることができるようになる。</p>
+<p>まずewwの設定。emacs内でのデフォルトブラウザをewwにする。
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">browse-url-browser-function</span> <span class="ss">&#39;eww-browse-url</span><span class="p">)</span></code></pre></div></p>
+<p><a href="http://rubikitch.com/2014/11/19/eww-nocolor/"target="_blank">Emacs24.4組み込みブラウザewwで目の疲れを1/10にする方法</a>の設定を追加。
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defvar</span> <span class="nv">eww-disable-colorize</span> <span class="no">t</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">shr-colorize-region--disable</span> <span class="p">(</span><span class="nv">orig</span> <span class="nv">start</span> <span class="nv">end</span> <span class="nv">fg</span> <span class="kp">&amp;optional</span> <span class="nv">bg</span> <span class="kp">&amp;rest</span> <span class="nv">_</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">unless</span> <span class="nv">eww-disable-colorize</span>
+    <span class="p">(</span><span class="nf">funcall</span> <span class="nv">orig</span> <span class="nv">start</span> <span class="nv">end</span> <span class="nv">fg</span><span class="p">)))</span>
+<span class="p">(</span><span class="nv">advice-add</span> <span class="ss">&#39;shr-colorize-region</span> <span class="nb">:around</span> <span class="ss">&#39;shr-colorize-region--disable</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">advice-add</span> <span class="ss">&#39;eww-colorize-region</span> <span class="nb">:around</span> <span class="ss">&#39;shr-colorize-region--disable</span><span class="p">)</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">eww-disable-color</span> <span class="p">()</span>
+  <span class="s">&#34;eww で文字色を反映させない&#34;</span>
+  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">setq-local</span> <span class="nv">eww-disable-colorize</span> <span class="no">t</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">eww-reload</span><span class="p">))</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">eww-enable-color</span> <span class="p">()</span>
+  <span class="s">&#34;eww で文字色を反映させる&#34;</span>
+  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">setq-local</span> <span class="nv">eww-disable-colorize</span> <span class="no">nil</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">eww-reload</span><span class="p">))</span></code></pre></div></p>
+<p>quackの設定関係は、M-x customizeで入れていった。関係ありそうなところを抜き出すとこんな感じ。
+quackそのままだとリンク切れのマニュアルとかあるし、使わないのが大量に入ってる。
+日本語版SICPとかgaucheのマニュアルは日本語のやつにしたりした。
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="c1">;; M-x customizes</span>
+<span class="p">(</span><span class="nv">custom-set-variables</span>
+ <span class="o">&#39;</span><span class="p">(</span><span class="nv">quack-manuals</span>
+   <span class="p">(</span><span class="nb">quote</span>
+	<span class="p">((</span><span class="nv">r6rs</span> <span class="s">&#34;R6RS&#34;</span> <span class="s">&#34;http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-2.html#node_toc_start&#34;</span> <span class="no">nil</span><span class="p">)</span>
+	 <span class="p">(</span><span class="nv">gauche</span> <span class="s">&#34;Gauche Reference Manual&#34;</span> <span class="s">&#34;http://practical-scheme.net/gauche/man/gauche-refj.html&#34;</span> <span class="no">nil</span><span class="p">)</span>
+	 <span class="p">(</span><span class="nv">tspl</span> <span class="s">&#34;Scheme Programming Language (Dybvig)&#34;</span> <span class="s">&#34;http://www.scheme.com/tspl/&#34;</span> <span class="no">nil</span><span class="p">)</span>
+	 <span class="p">(</span><span class="nv">sicp</span> <span class="s">&#34;Structure and Interpretation of Computer Programs(JP)&#34;</span> <span class="s">&#34;http://sicp.iijlab.net/fulltext/xcont.html&#34;</span> <span class="no">nil</span><span class="p">))))</span>
+<span class="p">)</span></code></pre></div></p>
+<p>これでとりあえず別のソフトを立ち上げないでSICPできる環境ができた。</p>
+</article><section class="article labels"><a class="category" href=/kazbo/categories/post/>post</a><a class="tag" href=/kazbo/tags/sicp/>sicp</a><a class="tag" href=/kazbo/tags/til/>TIL</a></section><section class="article author"><div class="details"><a class="item" href="https://github.com/kinoshita-lab" target="_blank"><span class="iconfont icon-github"></span>&nbsp;kinoshita-lab</a><a class="item" href="https://twitter.com/kazbo" target="_blank"><span class="iconfont icon-twitter"></span>&nbsp;@kazbo</a></div>
+</section></div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/kazbo/post/2016-01-19-live-uma-cafe-daisharin/"><span class="li iconfont icon-article"></span>車輪ライブ@大城 真 「Lost Mobile 2」クロージングイベント 2016/1/30</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">kazbo/kinoshita-lab</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/&#43;DiW/UqRcLbRjq" crossorigin="anonymous"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l&#43;B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd&#43;qj&#43;o24G5ZU2zJz" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46054731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>workshop on kazbo memos</title>
+    <link>/kazbo/tags/workshop/</link>
+    <description>Recent content in workshop on kazbo memos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/kazbo/tags/workshop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>電子楽器はつくれる！ ワークショップ#1 @FabCafe</title>
+      <link>/kazbo/post/2019-07-07-workshop_fabcafe/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/kazbo/post/2019-07-07-workshop_fabcafe/</guid>
+      <description>人生初のひとりワークショップ講師をしました。緊張したな。Teensy 3.6で色々音を出す基本をやってみよう！という感じの内容でした。 電子楽器</description>
+      
+    </item>
+    
+  </channel>
+</rss>
