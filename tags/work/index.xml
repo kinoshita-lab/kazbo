@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>work on kazbo memos</title>
+    <link>/kazbo/tags/work/</link>
+    <description>Recent content in work on kazbo memos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/kazbo/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TIME RIVER@渋谷SKY</title>
+      <link>/kazbo/post/2019-11-01-shibuya-sky/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/kazbo/post/2019-11-01-shibuya-sky/</guid>
+      <description>渋谷SKYの展望台にあるインスタレーション、 &amp;ldquo;TIME RIVER&amp;quot;の制作のお手伝いを、ponoorさん経由で、ほんの少しだけやりました。 作</description>
+      
+    </item>
+    
+    <item>
+      <title>spin collector</title>
+      <link>/kazbo/post/2019-10-07-spin-collector/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/kazbo/post/2019-10-07-spin-collector/</guid>
+      <description>DJ sniffさんからの依頼で、タレック・アトゥイさんの展示用のターンテーブル &amp;ldquo;Spin Collector&amp;quot;を作りました。 最初のバージョンは</description>
+      
+    </item>
+    
+  </channel>
+</rss>
