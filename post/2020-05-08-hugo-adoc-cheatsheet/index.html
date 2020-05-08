@@ -4,14 +4,17 @@
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark">
 <meta name="supported-color-schemes" content="light dark">
-<link rel="stylesheet" href="https://kinoshita-lab.github.io/kazbo/custom-css/fontawesome-all.min.css"><title>hugo&#43;asciidoc自分用チートシート&nbsp;&ndash;&nbsp;kazbo memos</title><link rel="stylesheet" href="https://kinoshita-lab.github.io/kazbo/css/core.min.fda107a9e621f86db2bd69c887b1c533c643d4f2465d882faa7bfe662d052e5e9d4a1a9369e1f39a5cb245cffbb0cac3.css" integrity="sha384-/aEHqeYh&#43;G2yvWnIh7HFM8ZD1PJGXYgvqnv&#43;Zi0FLl6dShqTaeHzmlyyRc/7sMrD"><meta name="twitter:card" content="summary" />
+<link rel="stylesheet" href="https://kinoshita-lab.github.io/kazbo/custom-css/fontawesome-all.min.css"><title>hugo&#43;asciidoc自分用チートシート&nbsp;&ndash;&nbsp;kazbo memos</title><link rel="stylesheet" href="https://kinoshita-lab.github.io/kazbo/css/core.min.f428756879ec10ffcd41333cd48e5a9ddbb61be40b591f7cd8a5efeca8fdd5394e33f453efaa4c43f52b2597aedbb9a2.css" integrity="sha384-9Ch1aHnsEP/NQTM81I5andu2G&#43;QLWR982KXv7Kj91TlOM/RT76pMQ/UrJZeu27mi"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="hugo&#43;asciidoc自分用チートシート" /><body><section id="header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="https://kinoshita-lab.github.io/kazbo/"><span class="site name">kazbo memos</span></a></span>
         <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="https://kinoshita-lab.github.io/kazbo/categories/">Categories</a><a class="nav item" href="https://kinoshita-lab.github.io/kazbo/tags/">Tags</a><a class="nav item" href="https://kinoshita-lab.github.io/kazbo/about">About</a></nav></div></span></div><div class="site slogan"><span class="title">whatever can make two ears of corn</span></div></section><section id="content"><div class="article-container"><section class="article header">
     <h1 class="article title">hugo+asciidoc自分用チートシート</h1><p class="article date">2020-05-08</p></section><article class="article markdown-body"><div class="sect2">
 <h3 id="_やってみた">やってみた</h3>
 <div class="paragraph">
-<p>asciidocそのもので、htmlが書ける。そのうえhugo+themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能が大量にあるので、使いそうなものを、さぐりつつここにメモる。</p>
+<p>asciidocそのもので、htmlが書ける。そのうえhugo+themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能が大量にあるので、使いそうなものを、色々さぐりつつ、ここにメモる。随時アップデートされる気がする。</p>
+</div>
+<div class="paragraph">
+<p>とりあえず自分が使いそうなものを調べてみた。</p>
 </div>
 </div>
 <div class="sect2">
@@ -29,11 +32,11 @@ Hugo Static Site Generator v0.69.2/extended linux/amd64 BuildDate: unknown</code
 </div>
 </div>
 <div class="paragraph">
-<p>これに、 <a href="https://themes.gohugo.io/hugo-notepadium/">notepadium</a> というテーマを入れた。</p>
+<p>これに、 <a href="https://themes.gohugo.io/hugo-notepadium/">notepadium</a> というテーマを入れた。hugoそのもので何か問題が起きてるのか、テーマの側でなのかとかを本当は気にしたほうがいいような気がする。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_最初にやられたこと基本など">最初にやられたこと、基本など</h3>
+<h3 id="_最初謎だったこと基本など">最初謎だったこと、基本など</h3>
 <div class="paragraph">
 <p>ヘッダの無い文章は書けないかもしれない。 Front Matterの後に普通に文章を書いてみる。たとえばこんなかんじ。</p>
 </div>
@@ -47,7 +50,7 @@ All your base are belog to us</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>みたいなことをすると、</p>
+<p>これをビルドすると、</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -63,7 +66,7 @@ Logged 3 error(s)</pre>
 <p>とかいう結果になってビルドできない。</p>
 </div>
 <div class="paragraph">
-<p>あと、この投稿を作るためには、そもそも{{ と }}でくくった内容(ShortCordという)をエスケープせずに出す、というのが大変だった。 markdownでは可能なようだ。
+<p>あと、この投稿を作るためには、そもそも{{ と }}でくくった内容(Shortcodeというらしい)をエスケープせずに出す、というのが大変だった。 markdownでは可能なようだ。
 <a href="https://github.com/gohugoio/hugo/edit/master/docs/content/en/templates/introduction.md">hugoのドキュメント</a>がそのように構成されているし。</p>
 </div>
 <div class="paragraph">
@@ -71,7 +74,7 @@ Logged 3 error(s)</pre>
 <span class="image-container"><span class="link" ><a href="https://gyazo.com/40b7632c167da0e89bfef7039d34a90d.png" 
         target="_blank"><img class="img" src="https://gyazo.com/40b7632c167da0e89bfef7039d34a90d.png"/></a></span>
 </span>
-こんな感じで /* と */ で ShortCodeの関数的な部分をかこむ。↑を画像でなく、文字で表わせないかという二重にややこしいことを試みる気にはあまりならなかった。。</p>
+こんな感じで /* と */ で Shortcodeの関数的な部分をかこむ。↑を画像でなく、文字で表わせないかという二重にややこしいことを試みる気にはあまりならなかった。。</p>
 </div>
 <div class="sect3">
 <h4 id="_ヘッダは3レベルから">ヘッダは3レベルから</h4>
@@ -187,6 +190,78 @@ Logged 3 error(s)</pre>
 </div>
 </div>
 <div class="sect3">
+<h4 id="_そのまま出てほしいやつ">そのまま出てほしいやつ</h4>
+<div class="paragraph">
+<p>asciidocの機能を使う。</p>
+</div>
+<div class="paragraph">
+<span class="image-container"><span class="link" ><a href="https://i.gyazo.com/d22bb33177b71c9e105b4b3f6b229b49.png" 
+        target="_blank"><img class="img" src="https://i.gyazo.com/d22bb33177b71c9e105b4b3f6b229b49.png"/></a></span>
+</span>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>ここに書く</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_細かい使いそうな文字列をいじるやつ">細かい使いそうな文字列をいじるやつ</h4>
+<div class="sect4">
+<h5 id="_強調したいとき">強調したいとき</h5>
+<div class="paragraph">
+<p>日本語ではイタリックで強調しないような気がするので、太字にするとしたらこんな。太字にしたいところの両側にスペース必要。アスタリスクを二重にすればスペース不要。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>だるくない *だるい* だるくない</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>だるくない <strong>だるい</strong> だるくない</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>だるくない**実はだるい**だるくない</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>だるくない<strong>実はだるい</strong>だるくない</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_消したいとき">消したいとき</h5>
+<div class="paragraph">
+<p>微妙に特殊だった(markdown比)。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[line-through]#いつもとてもやるきがある#</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="line-through">いつもとてもやるきがある</span></p>
+</div>
+<div class="paragraph">
+<p>線が表示されなかったので、cssに以下追加。</p>
+</div>
+<div class="paragraph">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">line-through</span> <span class="p">{</span>
+  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">line-through</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="_数式">数式</h4>
 <div class="paragraph">
 <p>asciidocの書き方をすると普通に表示されるようだ。記法はlatex。</p>
@@ -213,6 +288,52 @@ Logged 3 error(s)</pre>
 </div>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_表">表</h3>
+<div class="paragraph">
+<p>こんなかんじで書けば表になる。区切りは | 。 末尾に | は不要。タイトルつけられたりするけどこのレベルのpostでは使わなくていい気がする。空欄にも対応してるっぽいが、
+各行の項目数はそろっている必要がある。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>|===
+|a|b|c|d|e|f|g
+|h|i|j|k|l|m||
+|===</pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">b</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">f</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">g</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">h</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">i</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">j</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">l</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_ソースコード">ソースコード</h3>
@@ -310,7 +431,19 @@ auto main() -&gt; int {
 <div class="sect3">
 <h4 id="_gist">gist</h4>
 <div class="paragraph">
-<p>変なシマシマが出て謎だけど、ShortCodeでいける。幅はcssで適当に調節した。.gist-file クラスをいじればOK</p>
+<p>変なシマシマが出て謎だけど、Shortcodeでいける。幅はcssで適当に調節した。.gist-file クラスをいじればOK
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">gist-file</span> <span class="p">{</span>
+  <span class="k">max-width</span><span class="p">:</span> <span class="mi">1024</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -337,6 +470,9 @@ auto main() -&gt; int {
 </div>
 <div class="sect3">
 <h4 id="_画像">画像</h4>
+<div class="paragraph">
+<p>Shortcodeでやる。</p>
+</div>
 <div class="sect4">
 <h5 id="_ローカルでやる">ローカルでやる</h5>
 <div class="paragraph">
@@ -364,13 +500,25 @@ auto main() -&gt; int {
 </span>
 </div>
 <div class="paragraph">
-<p>センタリングされてもあまりうれしくないので修正するかもしれない。&#8594;した。</p>
+<p>センタリングされてもあまりうれしくないので修正するかもしれない。&#8594;した。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">image-container</span> <span class="p">{</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div></p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_gyazo">gyazo</h5>
 <div class="paragraph">
-<p>生成されるページURLの末尾に.pngつける。</p>
+<p>生成されるページURLの末尾に.pngつけて、Shortcode。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -387,15 +535,38 @@ auto main() -&gt; int {
 <div class="sect3">
 <h4 id="_youtube">youtube</h4>
 <div class="paragraph">
-<p>shortcodeでやるとドキュメントの幅いっぱいになってしまうようだ。
+<p>Shortcodeでやるとドキュメントの幅いっぱいになってしまうようだ。
 ここはasciidocの埋め込みが良さそう。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/i9aPY7yWmTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+</div>
 </div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i9aPY7yWmTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="sect3">
+<h4 id="_soundcloud">soundcloud</h4>
+<div class="paragraph">
+<p>埋めこみ。
+まあこれも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/113815988&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;</pre>
+</div>
+</div>
+<iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/113815988&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</div>
+<div class="sect3">
 <h4 id="_mixcloud">mixcloud</h4>
 <div class="paragraph">
-<p>まあこれも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%</p>
+<p>これも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;feed=%2Fsaita-kazuki%2Fpop-sounds-museum-bbq-rave-kitchen-mediterraneo-casa-tsudanuma-20190730%2F" frameborder="0" &gt;&lt;/iframe&gt;</pre>
+</div>
 </div>
 <iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fsaita-kazuki%2Fpop-sounds-museum-bbq-rave-kitchen-mediterraneo-casa-tsudanuma-20190730%2F" frameborder="0" ></iframe>
 </div>
@@ -405,7 +576,7 @@ auto main() -&gt; int {
 <div class="sect3">
 <h4 id="_twitter">twitter</h4>
 <div class="paragraph">
-<p>ShortCodeでやる。</p>
+<p>Shortcodeでやる。tweetを個別に表示してそのURLの末尾を貼りつける。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -424,7 +595,8 @@ auto main() -&gt; int {
 <div class="sect3">
 <h4 id="_instagram">instagram</h4>
 <div class="paragraph">
-<p>埋め込みが長大なコードなので、ShortCodeでやろうと思う。ちょっと幅がでかい。
+<p>埋め込みが長大なコードなので、Shortcodeでやろうと思う。ちょっと幅がでかい。要改造な気がする。
+画層を表示してそのURLの末尾を貼りつける。
 
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B-BiSvKDsk9/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B-BiSvKDsk9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/B-BiSvKDsk9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">ブルーシート禁止とかの看板は見かけなかったけどゼロ、それ以外は臨時のゴミ箱などもあった</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/kazbo/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> kaz saita</a> (@kazbo) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-03-22T05:21:35+00:00">Mar 21, 2020 at 10:21pm PDT</time></p></div></blockquote>
