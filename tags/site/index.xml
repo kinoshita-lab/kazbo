@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>site on kazbo memos</title>
-    <link>/kazbo/tags/site/</link>
+    <link>/tags/site/</link>
     <description>Recent content in site on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/tags/site/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/site/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SNSに書いて終わりにするのをやめようと思った</title>
-      <link>/kazbo/post/2020-05-06-test/</link>
+      <link>/post/2020-05-06-moved-a-little-from-sns-to-this-site/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2020-05-06-test/</guid>
+      <guid>/post/2020-05-06-moved-a-little-from-sns-to-this-site/</guid>
       <description>why なんかこういうのを えせーねすに書いても流れていくよなー とおもったのでもうちょっとメモブログを充実させようという気持ちになった &amp;mdash; kaz SAITA</description>
       
     </item>

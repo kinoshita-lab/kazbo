@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.69.2" /><meta name="twitter:widgets:theme" content="dark">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<link rel="stylesheet" href="http://kinoshita-lab.github.io/kazbo/custom-css/fontawesome-all.min.css"><title>hugo&#43;asciidoc自分用チートシート&nbsp;&ndash;&nbsp;kazbo memos</title><link rel="stylesheet" href="http://kinoshita-lab.github.io/kazbo/css/core.min.fda107a9e621f86db2bd69c887b1c533c643d4f2465d882faa7bfe662d052e5e9d4a1a9369e1f39a5cb245cffbb0cac3.css" integrity="sha384-/aEHqeYh&#43;G2yvWnIh7HFM8ZD1PJGXYgvqnv&#43;Zi0FLl6dShqTaeHzmlyyRc/7sMrD"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="hugo&#43;asciidoc自分用チートシート" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="http://kinoshita-lab.github.io/kazbo/"><span class="site name">kazbo memos</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="http://kinoshita-lab.github.io/kazbo/categories/">Categories</a><a class="nav item" href="http://kinoshita-lab.github.io/kazbo/tags/">Tags</a><a class="nav item" href="http://kinoshita-lab.github.io/kazbo/about">About</a></nav></div></span></div><div class="site slogan"><span class="title">whatever can make two ears of corn</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">hugo+asciidoc自分用チートシート</h1><p class="article date">2020-05-08</p></section><article class="article markdown-body"><div class="sect2">
+<h3 id="_やってみた">やってみた</h3>
+<div class="paragraph">
+<p>asciidocそのもので、htmlが書ける。そのうえhugo+themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能が大量にあるので、使いそうなものを、さぐりつつここにメモる。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_環境的なもの">環境的なもの</h3>
+<div class="paragraph">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">$hugo</span> version
+Hugo Static Site Generator v0.69.2/extended linux/amd64 BuildDate: unknown</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>これに、 <a href="https://themes.gohugo.io/hugo-notepadium/">notepadium</a> というテーマを入れた。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_最初にやられたこと基本など">最初にやられたこと、基本など</h3>
+<div class="paragraph">
+<p>ヘッダの無い文章は書けないかもしれない。 Front Matterの後に普通に文章を書いてみる。たとえばこんなかんじ。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>tags:
+    - hugo
+    - asciidoc
+--- &lt;- ここまでFront Matter
+All your base are belog to us</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>みたいなことをすると、</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: &lt;stdin&gt;: line 5: section title out of sequence: expected level 1, got level 2
+post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: &lt;stdin&gt;: line 19: section title out of sequence: expected level 1, got level 2
+post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: &lt;stdin&gt;: line 28: section title out of sequence: expected level 1, got level 2
+Rebuild failed:
+
+Logged 3 error(s)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>とかいう結果になってビルドできない。</p>
+</div>
+<div class="paragraph">
+<p>あと、この投稿を作るためには、そもそも{{ と }}でくくった内容(ShortCordという)をエスケープせずに出す、というのが大変だった。 markdownでは可能なようだ。
+<a href="https://github.com/gohugoio/hugo/edit/master/docs/content/en/templates/introduction.md">hugoのドキュメント</a>がそのように構成されているし。</p>
+</div>
+<div class="paragraph">
+<p>asciidocでそれをやるには、
+<span class="image-container"><span class="link" ><a href="https://gyazo.com/40b7632c167da0e89bfef7039d34a90d.png" 
+        target="_blank"><img class="img" src="https://gyazo.com/40b7632c167da0e89bfef7039d34a90d.png"/></a></span>
+</span>
+こんな感じで /* と */ で ShortCodeの関数的な部分をかこむ。↑を画像でなく、文字で表わせないかという二重にややこしいことを試みる気にはあまりならなかった。。</p>
+</div>
+<div class="sect3">
+<h4 id="_ヘッダは3レベルから">ヘッダは3レベルから</h4>
+<div class="paragraph">
+<p>つまり、</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>=
+==</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>は使えない。入れると上と同じくビルドできない。エラーメッセージ省略。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_基本的な記法">基本的な記法</h3>
+<div class="sect3">
+<h4 id="_ヘッダ">ヘッダ</h4>
+<div class="paragraph">
+<p>3レベル以下が使える。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>=== あああ
+==== いいい
+===== ううう
+====== えええ</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_あああ">あああ</h3>
+<div class="sect3">
+<h4 id="_いいい">いいい</h4>
+<div class="sect4">
+<h5 id="_ううう">ううう</h5>
+<div class="sect5">
+<h6 id="_えええ">えええ</h6>
+<div class="paragraph">
+<p>そんなに深く使わないだろうけど。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_リンク">リンク</h4>
+<div class="listingblock">
+<div class="content">
+<pre>https://www.switch-science.com/catalog/5914/[MIDI野郎]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://www.switch-science.com/catalog/5914/">MIDI野郎</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_箇条書き">箇条書き</h4>
+<div class="listingblock">
+<div class="content">
+<pre>* all
+* your
+* base
+ ** are
+  *** belong
+   **** to
+     ***** us</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>all</p>
+</li>
+<li>
+<p>your</p>
+</li>
+<li>
+<p>base</p>
+<div class="ulist">
+<ul>
+<li>
+<p>are</p>
+<div class="ulist">
+<ul>
+<li>
+<p>belong</p>
+<div class="ulist">
+<ul>
+<li>
+<p>to</p>
+<div class="ulist">
+<ul>
+<li>
+<p>us</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数式">数式</h4>
+<div class="paragraph">
+<p>asciidocの書き方をすると普通に表示されるようだ。記法はlatex。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>latexmath:[\int_0^\infty f(x) dx]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>\(\int_0^\infty f(x) dx\)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[stem,latexmath]
+++++
+\int_0^\infty f(x) dx
+++++</pre>
+</div>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\int_0^\infty f(x) dx\]
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ソースコード">ソースコード</h3>
+<div class="paragraph">
+<p>asciidocの方でも対応しているけど、hugo内蔵のChroma+splash?を使うと、色がついたりして良さそう。
+行番号つけるには、 config.tomlで</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[markup.highlight]
+lineNos = true</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ってやる。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; highlight cpp &gt;}}
+#include &lt;iostream&gt;
+
+auto main() -&gt; int {
+    return 0;
+};
+{{&lt; /highlight &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="k">auto</span> <span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;unko&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>ハイライト可能な言語の一覧はここにある。
+<a href="https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages">List of Chroma Highlighting Languages</a></p>
+</div>
+<div class="paragraph">
+<p>自分が使いそうなのは、</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">言語</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">書くべき内容</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bash</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C++</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpp</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Common Lisp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lisp</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scheme</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>とりあえずこのくらい。Makefileやリンカスクリプトは無いのか残念。別のハイライタに変えるかも。</p>
+</div>
+<div class="sect3">
+<h4 id="_gist">gist</h4>
+<div class="paragraph">
+<p>変なシマシマが出て謎だけど、ShortCodeでいける。幅はcssで適当に調節した。.gist-file クラスをいじればOK</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; gist kinoshita-lab 038354a2b22613ac5ba04f2736324ccd &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
+<script type="application/javascript" src="https://gist.github.com/kinoshita-lab/038354a2b22613ac5ba04f2736324ccd.js"></script>
+
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_メディア的なもの">メディア的なもの</h3>
+<div class="paragraph">
+<p>埋め込み系のやつの書き方基本</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>++++
+ここにURLを貼る！
+++++</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_画像">画像</h4>
+<div class="sect4">
+<h5 id="_ローカルでやる">ローカルでやる</h5>
+<div class="paragraph">
+<p>static/images/teensy_ng_connection.png を表示したいときは、</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; figure src="http://kinoshita-lab.github.io/kazbo/images/teensy_ng_connection.png" &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>とやると出る。github pagesがprojectになっている場合(=このサイトがそうだ)、config.tomlの頭の方のルートっぽい所に</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>canonifyurls = "true"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>とやっておく必要がある。</p>
+</div>
+<div class="paragraph">
+<span class="image-container"><span class="link" ><a href="http://kinoshita-lab.github.io/kazbo/images/teensy_ng_connection.png" 
+        target="_blank"><img class="img" src="http://kinoshita-lab.github.io/kazbo/images/teensy_ng_connection.png"/></a></span>
+</span>
+</div>
+<div class="paragraph">
+<p>センタリングされてもあまりうれしくないので修正するかもしれない。&#8594;した。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_gyazo">gyazo</h5>
+<div class="paragraph">
+<p>生成されるページURLの末尾に.pngつける。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; figure src="https://gyazo.com/46ee8d9ab21612f5b54dde5033c5621f.png" &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
+<span class="image-container"><span class="link" ><a href="https://gyazo.com/46ee8d9ab21612f5b54dde5033c5621f.png" 
+        target="_blank"><img class="img" src="https://gyazo.com/46ee8d9ab21612f5b54dde5033c5621f.png"/></a></span>
+</span>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_youtube">youtube</h4>
+<div class="paragraph">
+<p>shortcodeでやるとドキュメントの幅いっぱいになってしまうようだ。
+ここはasciidocの埋め込みが良さそう。</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i9aPY7yWmTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="sect3">
+<h4 id="_mixcloud">mixcloud</h4>
+<div class="paragraph">
+<p>まあこれも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%</p>
+</div>
+<iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fsaita-kazuki%2Fpop-sounds-museum-bbq-rave-kitchen-mediterraneo-casa-tsudanuma-20190730%2F" frameborder="0" ></iframe>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sns系">SNS系</h3>
+<div class="sect3">
+<h4 id="_twitter">twitter</h4>
+<div class="paragraph">
+<p>ShortCodeでやる。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; tweet 1253156914503888897 &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">[木下研究所] 3.5mm TRS MIDIの極性を変換する雑キット　ABコンバータちゃん　をこさえました！<a href="https://t.co/csqxposMlO">https://t.co/csqxposMlO</a></p>&mdash; kaz SAITA@禁煙チャレンジ中 (@kazbo) <a href="https://twitter.com/kazbo/status/1253156914503888897?ref_src=twsrc%5Etfw">April 23, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+<div class="paragraph">
+<p>choromeにduckduckgoのextension入れてるとうまく表示されない。オプションで "Show Embedded Tweets"をOnにすると見えるようになる。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_instagram">instagram</h4>
+<div class="paragraph">
+<p>埋め込みが長大なコードなので、ShortCodeでやろうと思う。ちょっと幅がでかい。
+
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B-BiSvKDsk9/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B-BiSvKDsk9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/B-BiSvKDsk9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">ブルーシート禁止とかの看板は見かけなかったけどゼロ、それ以外は臨時のゴミ箱などもあった</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/kazbo/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> kaz saita</a> (@kazbo) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-03-22T05:21:35+00:00">Mar 21, 2020 at 10:21pm PDT</time></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script></p>
+</div>
+</div>
+</div>
+</article><section class="article labels"><a class="category" href=http://kinoshita-lab.github.io/kazbo/categories/post/>post</a><a class="tag" href=http://kinoshita-lab.github.io/kazbo/tags/hugo/>hugo</a><a class="tag" href=http://kinoshita-lab.github.io/kazbo/tags/asciidoc/>asciidoc</a></section><section class="article author"><div class="details"><a class="item" href="https://github.com/kinoshita-lab" target="_blank"><span class="iconfont icon-github"></span>&nbsp;kinoshita-lab</a><a class="item" href="https://twitter.com/kazbo" target="_blank"><span class="iconfont icon-twitter"></span>&nbsp;@kazbo</a></div>
+</section></div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="http://kinoshita-lab.github.io/kazbo/post/2020-12-31-midi-guy-ssci/"><span class="li iconfont icon-article"></span>MIDI野郎キット スイッチサイエンスさんで販売開始しました</a></p><p><a class="link" href="http://kinoshita-lab.github.io/kazbo/post/2020-05-06-moved-a-little-from-sns-to-this-site/"><span class="li iconfont icon-article"></span>SNSに書いて終わりにするのをやめようと思った</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">kazbo/kinoshita-lab</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/&#43;DiW/UqRcLbRjq" crossorigin="anonymous"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l&#43;B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd&#43;qj&#43;o24G5ZU2zJz" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46054731-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+
+</html>

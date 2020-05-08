@@ -2,10 +2,12 @@
 <html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.69.2" /><meta name="twitter:widgets:theme" content="dark">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>teensy3.6を買ってきて音が出るまで&nbsp;&ndash;&nbsp;kazbo memos</title><link rel="stylesheet" href="/kazbo/css/core.min.8b22e64474b0e772dd0b8c84f0014f61c2a49cadd2c4ca65376bccafa1fc90303b2de2269c5f92d1cef85d594700bbe5.css" integrity="sha384-iyLmRHSw53LdC4yE8AFPYcKknK3SxMplN2vMr6H8kDA7LeImnF&#43;S0c74XVlHALvl"><meta name="twitter:card" content="summary" />
+<meta name="supported-color-schemes" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<link rel="stylesheet" href="http://kinoshita-lab.github.io/kazbo/custom-css/fontawesome-all.min.css"><title>teensy3.6を買ってきて音が出るまで&nbsp;&ndash;&nbsp;kazbo memos</title><link rel="stylesheet" href="http://kinoshita-lab.github.io/kazbo/css/core.min.fda107a9e621f86db2bd69c887b1c533c643d4f2465d882faa7bfe662d052e5e9d4a1a9369e1f39a5cb245cffbb0cac3.css" integrity="sha384-/aEHqeYh&#43;G2yvWnIh7HFM8ZD1PJGXYgvqnv&#43;Zi0FLl6dShqTaeHzmlyyRc/7sMrD"><meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="teensy3.6を買ってきて音が出るまで" /><body><section id="header">
-    <div class="header wrap"><span class="header left-side"><a class="site home" href="/kazbo/"><span class="site name">kazbo memos</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/kazbo/categories/">Categories</a><a class="nav item" href="/kazbo/tags/">Tags</a><a class="nav item" href="/kazbo/about">About</a></nav></div></span></div><div class="site slogan"><span class="title">whatever can make two ears of corn</span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="http://kinoshita-lab.github.io/kazbo/"><span class="site name">kazbo memos</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="http://kinoshita-lab.github.io/kazbo/categories/">Categories</a><a class="nav item" href="http://kinoshita-lab.github.io/kazbo/tags/">Tags</a><a class="nav item" href="http://kinoshita-lab.github.io/kazbo/about">About</a></nav></div></span></div><div class="site slogan"><span class="title">whatever can make two ears of corn</span></div></section><section id="content"><div class="article-container"><section class="article header">
     <h1 class="article title">teensy3.6を買ってきて音が出るまで</h1><p class="article date">2019-03-13</p></section><article class="article markdown-body"><p>BBBのライブで使うために<a href="https://www.pjrc.com/store/teensy36.html"target="_blank">teensy3.6</a>を買った。
 ここから音を出したい。Teensyのサンプルスケッチでは、オーディオ出力はSGTL5000経由になっているので、そのままでは使えない。
 ドキュメントが整備されてなくて、あまり説明されてなさそうなので、手探りで音がでるところまでやってみた。</p>
@@ -22,7 +24,48 @@
 </ul>
 <p>Audio Design Toolからはソース片のようなものしか出ないので、そこに必要なコードを書いて動くようにする。
 上のDAC0, 1の両方から音を出すには、例えばこのような感じにすればいいようだ。</p>
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// ここから↓
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// ここから↓
 </span><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;Audio.h&gt;</span><span class="cp">
 </span><span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp">
 </span><span class="cp">#include</span> <span class="cpf">&lt;SPI.h&gt;</span><span class="cp">
@@ -59,7 +102,9 @@
 <span class="k">auto</span> <span class="nf">loop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">void</span> <span class="p">{</span>
     <span class="c1">// ここでやることは特にない
 </span><span class="c1"></span><span class="p">}</span>
-</code></pre></div>
+</code></pre></td></tr></table>
+</div>
+</div>
 <p>これを書きこんだらサイン波が聞こえた。</p>
 <h2 id="その他tips">その他tips</h2>
 <ul>
@@ -71,9 +116,9 @@
  Used: /home/kazbo/Arduino/libraries/MsTimer2
  Not used: /usr/share/arduino/hardware/teensy/avr/libraries/MsTimer2
 </code></pre><p>このような警告（のようなもの）が出る。Teensyduino側のものを使っていない。ここは設定方法はあるのだろうか。動作の不具合などはなく、特別困ってはいないので放置。</p>
-</article><section class="article labels"><a class="category" href=/kazbo/categories/post/>post</a><a class="tag" href=/kazbo/tags/teensy/>teensy</a><a class="tag" href=/kazbo/tags/til/>TIL</a></section><section class="article author"><div class="details"><a class="item" href="https://github.com/kinoshita-lab" target="_blank"><span class="iconfont icon-github"></span>&nbsp;kinoshita-lab</a><a class="item" href="https://twitter.com/kazbo" target="_blank"><span class="iconfont icon-twitter"></span>&nbsp;@kazbo</a></div>
+</article><section class="article labels"><a class="category" href=http://kinoshita-lab.github.io/kazbo/categories/post/>post</a><a class="tag" href=http://kinoshita-lab.github.io/kazbo/tags/teensy/>teensy</a><a class="tag" href=http://kinoshita-lab.github.io/kazbo/tags/til/>TIL</a></section><section class="article author"><div class="details"><a class="item" href="https://github.com/kinoshita-lab" target="_blank"><span class="iconfont icon-github"></span>&nbsp;kinoshita-lab</a><a class="item" href="https://twitter.com/kazbo" target="_blank"><span class="iconfont icon-twitter"></span>&nbsp;@kazbo</a></div>
 </section></div>
-<div class="article bottom"><section class="article navigation"><p><a class="link" href="/kazbo/post/2019-03-13-sicp_meaning_for_me/"><span class="li iconfont icon-article"></span>SICPをやったまとめ</a></p><p><a class="link" href="/kazbo/post/2019-03-05-restart/"><span class="li iconfont icon-article"></span>再起動的な</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="http://kinoshita-lab.github.io/kazbo/post/2019-03-13-sicp_meaning_for_me/"><span class="li iconfont icon-article"></span>SICPをやったまとめ</a></p><p><a class="link" href="http://kinoshita-lab.github.io/kazbo/post/2019-03-05-restart/"><span class="li iconfont icon-article"></span>再起動的な</a></p></section></div></section><section id="footer"><div class="footer-wrap">
     <p class="copyright">kazbo/kinoshita-lab</p>
     <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
         target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 

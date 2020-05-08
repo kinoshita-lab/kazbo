@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on kazbo memos</title>
-    <link>/kazbo/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>post</title>
-      <link>/kazbo/categories/post/</link>
+      <link>/categories/post/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/categories/post/</guid>
+      <guid>/categories/post/</guid>
       <description></description>
       
     </item>

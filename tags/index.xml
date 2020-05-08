@@ -2,212 +2,232 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on kazbo memos</title>
-    <link>/kazbo/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kinoshita-lab</title>
-      <link>/kazbo/tags/kinoshita-lab/</link>
+      <link>/tags/kinoshita-lab/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/kinoshita-lab/</guid>
+      <guid>/tags/kinoshita-lab/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>product</title>
-      <link>/kazbo/tags/product/</link>
+      <link>/tags/product/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/product/</guid>
+      <guid>/tags/product/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>asciidoc</title>
+      <link>/tags/asciidoc/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/asciidoc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hugo/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>site</title>
-      <link>/kazbo/tags/site/</link>
+      <link>/tags/site/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/site/</guid>
+      <guid>/tags/site/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>NTS-1</title>
-      <link>/kazbo/tags/nts-1/</link>
+      <link>/tags/nts-1/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/nts-1/</guid>
+      <guid>/tags/nts-1/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>live</title>
-      <link>/kazbo/tags/live/</link>
+      <link>/tags/live/</link>
       <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/live/</guid>
+      <guid>/tags/live/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>exhibition</title>
-      <link>/kazbo/tags/exhibition/</link>
+      <link>/tags/exhibition/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/exhibition/</guid>
+      <guid>/tags/exhibition/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>work</title>
-      <link>/kazbo/tags/work/</link>
+      <link>/tags/work/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/work/</guid>
+      <guid>/tags/work/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>moids</title>
-      <link>/kazbo/tags/moids/</link>
+      <link>/tags/moids/</link>
       <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/moids/</guid>
+      <guid>/tags/moids/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>DJ</title>
-      <link>/kazbo/tags/dj/</link>
+      <link>/tags/dj/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/dj/</guid>
+      <guid>/tags/dj/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>workshop</title>
-      <link>/kazbo/tags/workshop/</link>
+      <link>/tags/workshop/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/workshop/</guid>
+      <guid>/tags/workshop/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>solo</title>
-      <link>/kazbo/tags/solo/</link>
+      <link>/tags/solo/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/solo/</guid>
+      <guid>/tags/solo/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>solowork</title>
-      <link>/kazbo/tags/solowork/</link>
+      <link>/tags/solowork/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/solowork/</guid>
+      <guid>/tags/solowork/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>BBB</title>
-      <link>/kazbo/tags/bbb/</link>
+      <link>/tags/bbb/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/bbb/</guid>
+      <guid>/tags/bbb/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>sicp</title>
-      <link>/kazbo/tags/sicp/</link>
+      <link>/tags/sicp/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/sicp/</guid>
+      <guid>/tags/sicp/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>teensy</title>
-      <link>/kazbo/tags/teensy/</link>
+      <link>/tags/teensy/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/teensy/</guid>
+      <guid>/tags/teensy/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>TIL</title>
-      <link>/kazbo/tags/til/</link>
+      <link>/tags/til/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/til/</guid>
+      <guid>/tags/til/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>misc</title>
-      <link>/kazbo/tags/misc/</link>
+      <link>/tags/misc/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/misc/</guid>
+      <guid>/tags/misc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>seth</title>
-      <link>/kazbo/tags/seth/</link>
+      <link>/tags/seth/</link>
       <pubDate>Wed, 06 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/seth/</guid>
+      <guid>/tags/seth/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>sharin</title>
-      <link>/kazbo/tags/sharin/</link>
+      <link>/tags/sharin/</link>
       <pubDate>Sat, 02 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/sharin/</guid>
+      <guid>/tags/sharin/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>arduino</title>
-      <link>/kazbo/tags/arduino/</link>
+      <link>/tags/arduino/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/tags/arduino/</guid>
+      <guid>/tags/arduino/</guid>
       <description></description>
       
     </item>

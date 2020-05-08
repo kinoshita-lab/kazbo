@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>BBB on kazbo memos</title>
-    <link>/kazbo/tags/bbb/</link>
+    <link>/tags/bbb/</link>
     <description>Recent content in BBB on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/tags/bbb/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/bbb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3/16 BBBでNxPC.Live Vol.35に出演します@shibuya circus</title>
-      <link>/kazbo/post/2019-03-16-bbb_circus_shibuya/</link>
+      <link>/post/2019-03-16-bbb_circus_shibuya/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2019-03-16-bbb_circus_shibuya/</guid>
+      <guid>/post/2019-03-16-bbb_circus_shibuya/</guid>
       <description>BBBでライブします。新型を作らなければ… イベントの詳細はこちらです Peatixのチケットはこちらです 3月16日(土)に、Circus Tok</description>
       
     </item>
     
     <item>
       <title>3/8 dommune, 3/11 IAMASONIC BEYOND</title>
-      <link>/kazbo/post/2017-03-08-bbb/</link>
+      <link>/post/2017-03-08-bbb/</link>
       <pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2017-03-08-bbb/</guid>
+      <guid>/post/2017-03-08-bbb/</guid>
       <description>http://www.dommune.com/reserve/2017/0308/ http://www.iamas.ac.jp/19929</description>
       
     </item>
     
     <item>
       <title>Maker Faire Tokyo 2016</title>
-      <link>/kazbo/post/2016-08-06-bbb-mft/</link>
+      <link>/post/2016-08-06-bbb-mft/</link>
       <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2016-08-06-bbb-mft/</guid>
+      <guid>/post/2016-08-06-bbb-mft/</guid>
       <description>BBBでFMラジオの基板を作り、Maker Faire Tokyoで公式グッズとして販売しました。 キットなので組み立てのワークショップもやりました。 さら</description>
       
     </item>

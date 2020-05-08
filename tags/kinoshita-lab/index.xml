@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>kinoshita-lab on kazbo memos</title>
-    <link>/kazbo/tags/kinoshita-lab/</link>
+    <link>/tags/kinoshita-lab/</link>
     <description>Recent content in kinoshita-lab on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/tags/kinoshita-lab/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/kinoshita-lab/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MIDI野郎キット スイッチサイエンスさんで販売開始しました</title>
-      <link>/kazbo/post/2020-12-31-midi-guy-ssci/</link>
+      <link>/post/2020-12-31-midi-guy-ssci/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2020-12-31-midi-guy-ssci/</guid>
+      <guid>/post/2020-12-31-midi-guy-ssci/</guid>
       <description>こちらのポストが最新になるように日付を変更しました。 update: 2019/12/27 matrixsynthに掲載されていました。動画はyebisu303さんです！ Kinoshita Lab MIDI-guy</description>
       
     </item>
     
     <item>
       <title>ni-sui THE SYNTH PARTY vol.34</title>
-      <link>/kazbo/post/2020-02-12-nisui/</link>
+      <link>/post/2020-02-12-nisui/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2020-02-12-nisui/</guid>
+      <guid>/post/2020-02-12-nisui/</guid>
       <description>ときどきお世話になっている二水@茶箱で、「のみながら聞くDSPの話 NTS-1 初級編」という内容でお話をしました。 DSPの簡単な入り口くらいの内容です</description>
       
     </item>

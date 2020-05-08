@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>TIL on kazbo memos</title>
-    <link>/kazbo/tags/til/</link>
+    <link>/tags/til/</link>
     <description>Recent content in TIL on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Wed, 13 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/tags/til/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SICPをやったまとめ</title>
-      <link>/kazbo/post/2019-03-13-sicp_meaning_for_me/</link>
+      <link>/post/2019-03-13-sicp_meaning_for_me/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2019-03-13-sicp_meaning_for_me/</guid>
+      <guid>/post/2019-03-13-sicp_meaning_for_me/</guid>
       <description>やりながらメモしたことをとりあえず並べておく。ちょいちょい手なおしが入ると思う。 SICP(Structure and Interpretation of Computer Programs)という技術書がある。 22歳くらい</description>
       
     </item>
     
     <item>
       <title>teensy3.6を買ってきて音が出るまで</title>
-      <link>/kazbo/post/2019-03-13-teensy36_initial_audio_setup/</link>
+      <link>/post/2019-03-13-teensy36_initial_audio_setup/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2019-03-13-teensy36_initial_audio_setup/</guid>
+      <guid>/post/2019-03-13-teensy36_initial_audio_setup/</guid>
       <description>BBBのライブで使うためにteensy3.6を買った。 ここから音を出したい。Teensyのサンプルスケッチでは、オーディオ出力はSGTL50</description>
       
     </item>
     
     <item>
       <title>中華duinoをmac el capitan以降のmac OSで使う方法まとめ</title>
-      <link>/kazbo/post/2016-04-23-cheap-arduino/</link>
+      <link>/post/2016-04-23-cheap-arduino/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2016-04-23-cheap-arduino/</guid>
+      <guid>/post/2016-04-23-cheap-arduino/</guid>
       <description>激安なarduino互換ボードをmacで使おうとすると、USB&amp;lt;-&amp;gt;シリアル変換のICがオリジナルと違うため、ドライバーを別途イ</description>
       
     </item>
     
     <item>
       <title>emacsに引きこもる</title>
-      <link>/kazbo/post/2016-01-14-emacs-sicp-setup/</link>
+      <link>/post/2016-01-14-emacs-sicp-setup/</link>
       <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2016-01-14-emacs-sicp-setup/</guid>
+      <guid>/post/2016-01-14-emacs-sicp-setup/</guid>
       <description>SICPやるときに色々とアプリケーション切り替えるのがめんどくさい。emacsだけで全部終わればいいのに。 schemeをemacsで使うとき</description>
       
     </item>

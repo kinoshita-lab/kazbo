@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>solo on kazbo memos</title>
-    <link>/kazbo/tags/solo/</link>
+    <link>/tags/solo/</link>
     <description>Recent content in solo on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/tags/solo/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/solo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DIY musicians ~Home-made instruments vol.2</title>
-      <link>/kazbo/post/2017-06-05-diy/</link>
+      <link>/post/2017-06-05-diy/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2017-06-05-diy/</guid>
+      <guid>/post/2017-06-05-diy/</guid>
       <description>DIY musicians ~Home-made instruments vol.2 に出展しています。 6/24には簡単なデモ演奏を15分くらいやる予定です。 http://uma-merdre.com/blog/diy-musicians-home-made-instruments-vol-2/</description>
       
     </item>
     
     <item>
       <title>「と色」 @forest limit 3/17</title>
-      <link>/kazbo/post/2017-03-17-solo/</link>
+      <link>/post/2017-03-17-solo/</link>
       <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2017-03-17-solo/</guid>
+      <guid>/post/2017-03-17-solo/</guid>
       <description>「と色」にソロで出ました。</description>
       
     </item>
     
     <item>
       <title>車輪の再発明ライブ societyl 2017/2/8</title>
-      <link>/kazbo/post/2017-02-18-sharin/</link>
+      <link>/post/2017-02-18-sharin/</link>
       <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2017-02-18-sharin/</guid>
+      <guid>/post/2017-02-18-sharin/</guid>
       <description>高橋くんが遠くへ行ってしまったので、この後しばらくライブは無いです。</description>
       
     </item>

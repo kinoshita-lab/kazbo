@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>NTS-1 on kazbo memos</title>
-    <link>/kazbo/tags/nts-1/</link>
+    <link>/tags/nts-1/</link>
     <description>Recent content in NTS-1 on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/kazbo/tags/nts-1/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/nts-1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ni-sui THE SYNTH PARTY vol.34</title>
-      <link>/kazbo/post/2020-02-12-nisui/</link>
+      <link>/post/2020-02-12-nisui/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/kazbo/post/2020-02-12-nisui/</guid>
+      <guid>/post/2020-02-12-nisui/</guid>
       <description>ときどきお世話になっている二水@茶箱で、「のみながら聞くDSPの話 NTS-1 初級編」という内容でお話をしました。 DSPの簡単な入り口くらいの内容です</description>
       
     </item>
