@@ -1,65 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kinoshita-lab on kazbo memos</title>
-    <link>/tags/kinoshita-lab/</link>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</link>
     <description>Recent content in kinoshita-lab on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Mon, 26 Jul 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/kinoshita-lab/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 26 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MIDI野郎在庫不足のお知らせ-&gt;解消しました</title>
-      <link>/post/2021-07-26-midi-guy-sold-out/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2021-07-26-midi-guy-sold-out/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-07-26-midi-guy-sold-out/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2021-07-26-midi-guy-sold-out/</guid>
       <description>前回PCBAを注文したMIDI野郎の歩留まりが悪く(そもそもの設計に問題があったためです)、検品したらほとんどがNG品となってしまったタイミ</description>
-      
     </item>
     
     <item>
       <title>MIDI野郎修理品 BOOTHで販売開始しました。</title>
-      <link>/post/2021-05-31-midi_guy-start-selling-on-booth/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2021-05-31-midi_guy-start-selling-on-booth/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-05-31-midi_guy-start-selling-on-booth/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2021-05-31-midi_guy-start-selling-on-booth/</guid>
       <description>前回のポストでお知らせした、BOOTHでの修理品の販売を開始しました。 https://kinoshita-lab.booth.pm/items/2979430 ↑こちらです。送料込みで3000円のつもりだったのですが、値段設定を</description>
-      
     </item>
     
     <item>
       <title>ABコンバータちゃん、DIN-&gt;TRS変換ケーブルをスイッチサイエンスさんで販売開始しました!</title>
-      <link>/post/2020-06-25-abc-cable/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2020-06-25-abc-cable/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-06-25-abc-cable/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2020-06-25-abc-cable/</guid>
       <description>こちらのポストが最新になるように日付を変更しました。 これまで手売り、twitter DMでの郵送で販売をしていたDIN→TRS変換ケーブルです</description>
-      
     </item>
     
     <item>
       <title>MIDI野郎キット スイッチサイエンスさんで販売開始しました</title>
-      <link>/post/2020-12-31-midi-guy-ssci/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2020-12-31-midi-guy-ssci/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-12-31-midi-guy-ssci/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2020-12-31-midi-guy-ssci/</guid>
       <description>こちらのポストが最新になるように日付を変更しました。 update: 2019/12/27 matrixsynthに掲載されていました。動画はyebisu303さんです！ Kinoshita Lab MIDI-guy</description>
-      
     </item>
     
     <item>
       <title>ni-sui THE SYNTH PARTY vol.34</title>
-      <link>/post/2020-02-12-nisui/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2020-02-12-nisui/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-02-12-nisui/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2020-02-12-nisui/</guid>
       <description>ときどきお世話になっている二水@茶箱で、「のみながら聞くDSPの話 NTS-1 初級編」という内容でお話をしました。 DSPの簡単な入り口くらいの内容です</description>
-      
     </item>
     
   </channel>

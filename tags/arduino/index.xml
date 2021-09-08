@@ -1,25 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>arduino on kazbo memos</title>
-    <link>/tags/arduino/</link>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/arduino/</link>
     <description>Recent content in arduino on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Sat, 23 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 23 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中華duinoをmac el capitan以降のmac OSで使う方法まとめ</title>
-      <link>/post/2016-04-23-cheap-arduino/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2016-04-23-cheap-arduino/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/2016-04-23-cheap-arduino/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2016-04-23-cheap-arduino/</guid>
       <description>激安なarduino互換ボードをmacで使おうとすると、USB&amp;lt;-&amp;gt;シリアル変換のICがオリジナルと違うため、ドライバーを別途イ</description>
-      
     </item>
     
   </channel>

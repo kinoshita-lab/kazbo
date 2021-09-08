@@ -1,235 +1,209 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on kazbo memos</title>
-    <link>/tags/</link>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/</link>
     <description>Recent content in Tags on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Mon, 26 Jul 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 26 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>kinoshita-lab</title>
-      <link>/tags/kinoshita-lab/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/kinoshita-lab/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>product</title>
-      <link>/tags/product/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/product/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/product/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/product/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>asciidoc</title>
-      <link>/tags/asciidoc/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/asciidoc/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/asciidoc/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/asciidoc/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/tags/hugo/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/hugo/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/hugo/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>site</title>
-      <link>/tags/site/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/site/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/site/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/site/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>NTS-1</title>
-      <link>/tags/nts-1/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/nts-1/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/nts-1/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/nts-1/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>live</title>
-      <link>/tags/live/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/live/</link>
       <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/live/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/live/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>exhibition</title>
-      <link>/tags/exhibition/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/exhibition/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/exhibition/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/exhibition/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>work</title>
-      <link>/tags/work/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/work/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/work/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/work/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>moids</title>
-      <link>/tags/moids/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/moids/</link>
       <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/moids/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/moids/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>DJ</title>
-      <link>/tags/dj/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/dj/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dj/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/dj/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>workshop</title>
-      <link>/tags/workshop/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/workshop/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/workshop/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/workshop/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>solowork</title>
-      <link>/tags/solowork/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/solowork/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/solowork/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/solowork/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>BBB</title>
-      <link>/tags/bbb/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/bbb/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/bbb/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/bbb/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>sicp</title>
-      <link>/tags/sicp/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/sicp/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sicp/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/sicp/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>teensy</title>
-      <link>/tags/teensy/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/teensy/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/teensy/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/teensy/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>TIL</title>
-      <link>/tags/til/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/til/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/til/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/til/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>misc</title>
-      <link>/tags/misc/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/misc/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/misc/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/misc/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>solo</title>
-      <link>/tags/solo/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/solo/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/solo/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/solo/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>seth</title>
-      <link>/tags/seth/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/seth/</link>
       <pubDate>Wed, 06 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/seth/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/seth/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>sharin</title>
-      <link>/tags/sharin/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/sharin/</link>
       <pubDate>Sat, 02 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sharin/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/sharin/</guid>
       <description></description>
-      
     </item>
     
     <item>
       <title>arduino</title>
-      <link>/tags/arduino/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/arduino/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/arduino/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/arduino/</guid>
       <description></description>
-      
     </item>
     
   </channel>

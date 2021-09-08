@@ -1,25 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>asciidoc on kazbo memos</title>
-    <link>/tags/asciidoc/</link>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/asciidoc/</link>
     <description>Recent content in asciidoc on kazbo memos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/asciidoc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/asciidoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo&#43;asciidoc自分用チートシート</title>
-      <link>/post/2020-05-08-hugo-adoc-cheatsheet/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2020-05-08-hugo-adoc-cheatsheet/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-08-hugo-adoc-cheatsheet/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2020-05-08-hugo-adoc-cheatsheet/</guid>
       <description>やってみた asciidocそのもので、htmlが書ける。そのうえhugo+themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能</description>
-      
     </item>
     
   </channel>

@@ -1,28 +1,136 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.83.1" /><meta name="twitter:widgets:theme" content="dark">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark">
-<link rel="stylesheet" href="https://kinoshita-lab.github.io/kazbo/custom-css/fontawesome.min.css"><title>teensy3.6を買ってきて音が出るまで&nbsp;&ndash;&nbsp;kazbo memos</title><link rel="stylesheet" href="../../css/core.min.96bd7575eea52893bea1e79f7c1bab4eeb8813b45cdc7100798e45c38ad15e7b535c6ef38390af3d294b12f974e028cb.css" integrity="sha384-lr11de6lKJO&#43;oeeffBurTuuIE7Rc3HEAeY5Fw4rRXntTXG7zg5CvPSlLEvl04CjL"><meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="teensy3.6を買ってきて音が出るまで" />
-<meta property="og:image" content="http://kinoshita-lab.github.io/kazbo/images/logo_card.png"/>
-<meta property="og:image:secure_url" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" /> 
-<meta property="og:image:width" content="200" /> 
-<meta property="og:image:height" content="200" />
+<html lang="ja">
 
-<meta property="og:title" content="teensy3.6を買ってきて音が出るまで"/>
-<meta property="og:url" content="https://kinoshita-lab.github.io/kazbo/post/2019-03-13-teensy36_initial_audio_setup/"/>
-<meta property="og:type" content="article"/>
-<meta property="og:description" content="BBBのライブで使うためにteensy3.6を買った。 ここから音を出したい。Teensyのサンプルスケッチでは、オーディオ出力はSGTL50"/><body><section id="header">
-    <div class="header wrap"><span class="header left-side"><a class="site home" href="../../"><span class="site name">kazbo memos</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="../../categories/">Categories</a><a class="nav item" href="../../tags/">Tags</a><a class="nav item" href="../../about">About</a></nav></div></span></div><div class="site slogan"><span class="title">whatever can make two ears of corn</span></div></section><section id="content"><div class="article-container"><section class="article header">
-    <h1 class="article title">teensy3.6を買ってきて音が出るまで</h1><p class="article date">2019-03-13</p></section><article class="article markdown-body"><p>BBBのライブで使うために<a href="https://www.pjrc.com/store/teensy36.html"target="_blank">teensy3.6</a>を買った。
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.83.1" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/images/favicons/dsrca.ico" />
+
+
+
+<title>teensy3.6を買ってきて音が出るまで - kazbo memos</title>
+
+
+<meta name="author" content="kazbo" />
+
+
+<meta name="description" content="kazbo&#39;s memos" />
+
+
+<meta name="keywords" content="teensy, TIL" />
+
+
+<meta property="og:title" content="teensy3.6を買ってきて音が出るまで" />
+<meta name="twitter:title" content="teensy3.6を買ってきて音が出るまで" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kinoshita-lab.github.io/kazbo/post/2019-03-13-teensy36_initial_audio_setup/" /><meta property="og:description" content="BBBのライブで使うためにteensy3.6を買った。 ここから音を出したい。Teensyのサンプルスケッチでは、オーディオ出力はSGTL50" />
+<meta name="twitter:description" content="BBBのライブで使うためにteensy3.6を買った。 ここから音を出したい。Teensyのサンプルスケッチでは、オーディオ出力はSGTL50" /><meta property="og:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" /><meta property="article:published_time" content="2019-03-13T00:00:00+00:00" /><meta property="article:modified_time" content="2019-03-13T00:00:00+00:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://kinoshita-lab.github.io/kazbo/assets/css/fuji.min.css" />
+
+
+
+
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-46054731-1');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46054731-1"></script>
+
+
+
+
+
+</head>
+
+<body
+  data-theme="dark"
+  data-theme-auto='false'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://kinoshita-lab.github.io/kazbo/">kazbo memos</a>
+            
+            <span class="title-sub">whatever can make two ears of corn</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://kinoshita-lab.github.io/kazbo/post/2019-03-13-teensy36_initial_audio_setup/">teensy3.6を買ってきて音が出るまで</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2019-03-13</span>
+
+
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="../../tags/teensy">teensy</a>&nbsp;<a href="../../tags/til">TIL</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>BBBのライブで使うために<a href="https://www.pjrc.com/store/teensy36.html" target="_blank">teensy3.6</a>を買った。
 ここから音を出したい。Teensyのサンプルスケッチでは、オーディオ出力はSGTL5000経由になっているので、そのままでは使えない。
 ドキュメントが整備されてなくて、あまり説明されてなさそうなので、手探りで音がでるところまでやってみた。</p>
 <h2 id="teensyduinoをインストールする">Teensyduinoをインストールする</h2>
-<p><a href="https://www.pjrc.com/teensy/teensyduino.html"target="_blank">Teensyduino</a>のサイトへ行きダウンロードしてきてインストールした。</p>
+<p><a href="https://www.pjrc.com/teensy/teensyduino.html" target="_blank">Teensyduino</a>のサイトへ行きダウンロードしてきてインストールした。</p>
 <h2 id="audio-design-toolからソースをexportする">Audio Design ToolからソースをExportする</h2>
-<p><a href="https://www.pjrc.com/teensy/gui/index.html"target="_blank">https://www.pjrc.com/teensy/gui/index.html</a>でパッチを組んでExportボタンを押す。</p>
+<p><a href="https://www.pjrc.com/teensy/gui/index.html" target="_blank">https://www.pjrc.com/teensy/gui/index.html</a>でパッチを組んでExportボタンを押す。</p>
 <p>Teensy3.6のDAC0, DAC1から音を出すには、 output セクションにある &ldquo;dacs&rdquo; を使う。<strong>dacではない</strong>ので注意。</p>
 <h2 id="arduino-ideでスケッチを書く">Arduino IDEでスケッチを書く</h2>
 <ul>
@@ -123,25 +231,334 @@
  Used: /home/kazbo/Arduino/libraries/MsTimer2
  Not used: /usr/share/arduino/hardware/teensy/avr/libraries/MsTimer2
 </code></pre><p>このような警告（のようなもの）が出る。Teensyduino側のものを使っていない。ここは設定方法はあるのだろうか。動作の不具合などはなく、特別困ってはいないので放置。</p>
-</article><section class="article labels"><a class="category" href=../../categories/post/>post</a><a class="tag" href=../../tags/teensy/>teensy</a><a class="tag" href=../../tags/til/>TIL</a></section><section class="article author"><div class="details"><a class="item" href="https://github.com/kinoshita-lab" target="_blank"><span class="iconfont icon-github"></span>&nbsp;kinoshita-lab</a><a class="item" href="https://twitter.com/kazbo" target="_blank"><span class="iconfont icon-twitter"></span>&nbsp;@kazbo</a></div>
-</section></div>
-<div class="article bottom"><section class="article navigation"><p><a class="link" href="../../post/2019-03-13-sicp_meaning_for_me/"><span class="li iconfont icon-article"></span>SICPをやったまとめ</a></p><p><a class="link" href="../../post/2019-03-05-restart/"><span class="li iconfont icon-article"></span>再起動的な</a></p></section></div></section><section id="footer"><div class="footer-wrap">
-    <p class="copyright">kazbo/kinoshita-lab</p>
-    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
-        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
-        target="_blank">Notepadium</a></p>
-</div></section><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/&#43;DiW/UqRcLbRjq" crossorigin="anonymous"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l&#43;B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd&#43;qj&#43;o24G5ZU2zJz" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-            onload="renderMathInElement(document.body);"></script>
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-46054731-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>ページ</h3>
+        <ul>
+            
+            <li>
+                <a href="../../">Home</a>
+            </li>
+            
+            <li>
+                <a href="../../about/">About</a>
+            </li>
+            
+            <li>
+                <a href="../../index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>リンク</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/kinoshita-lab" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>タグ</h3>
+        <div>
+            
+            <span>
+                <a href="../../tags/arduino/">arduino</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/asciidoc/">asciidoc</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/bbb/">BBB</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/dj/">DJ</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/exhibition/">exhibition</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/hugo/">hugo</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/kinoshita-lab/">kinoshita-lab</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/live/">live</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/misc/">misc</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/moids/">moids</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/nts-1/">NTS-1</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/product/">product</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/seth/">seth</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/sharin/">sharin</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/sicp/">sicp</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/site/">site</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/solo/">solo</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/solowork/">solowork</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/teensy/">teensy</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/til/">TIL</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/work/">work</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/workshop/">workshop</a>
+            </span>
+            
+        </div>
+    </div>
+    
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>ページ</h3>
+        <ul>
+            
+            <li>
+                <a href="../../">Home</a>
+            </li>
+            
+            <li>
+                <a href="../../about/">About</a>
+            </li>
+            
+            <li>
+                <a href="../../index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>リンク</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/kinoshita-lab" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>タグ</h3>
+        <div>
+            
+            <span>
+                <a href="../../tags/arduino/">arduino</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/asciidoc/">asciidoc</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/bbb/">BBB</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/dj/">DJ</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/exhibition/">exhibition</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/hugo/">hugo</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/kinoshita-lab/">kinoshita-lab</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/live/">live</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/misc/">misc</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/moids/">moids</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/nts-1/">NTS-1</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/product/">product</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/seth/">seth</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/sharin/">sharin</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/sicp/">sicp</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/site/">site</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/solo/">solo</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/solowork/">solowork</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/teensy/">teensy</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/til/">TIL</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/work/">work</a>
+            </span>
+            
+            <span>
+                <a href="../../tags/workshop/">workshop</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2021
+                <a href="https://kinoshita-lab.github.io/kazbo/">kazbo</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="../../assets/js/fuji.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"
+></script>
+
+
+
+
 </body>
 
 </html>
