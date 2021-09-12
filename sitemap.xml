@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-09-08-twil/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/</loc>
-    <lastmod>2021-07-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/this-week-i-learned/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</loc>
     <lastmod>2021-07-26T00:00:00+00:00</lastmod>
@@ -11,13 +23,7 @@
     <loc>https://kinoshita-lab.github.io/kazbo/post/2021-07-26-midi-guy-sold-out/</loc>
     <lastmod>2021-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/</loc>
-    <lastmod>2021-07-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/product/</loc>
-    <lastmod>2021-07-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/tags/</loc>
     <lastmod>2021-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/post/2021-05-31-midi_guy-start-selling-on-booth/</loc>
