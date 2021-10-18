@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Sun, 03 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/this-week-i-learned/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/this-week-i-learned/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20211010 - 20211016の週記</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2021-10-17-twil/</link>
+      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2021-10-17-twil/</guid>
+      <description>全体 仕事がとてもいそがしくてあまり自分の学びが無い週だった。 macのjuceのメニュー これじゃ日本語はまともに取りあつかえない。 https://github.com/juce-framework/JUCE/blob/6.1.2/modules/juce_gui_basics/native/juce_mac_MainMenu.mm#L687-L696 どうするか</description>
+    </item>
+    
+    <item>
+      <title>20211003 - 20211009の週記</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2021-10-10-twil/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2021-10-10-twil/</guid>
+      <description>倉庫兼事務所の進展 令和３年度新ビジネスチャレンジ支援提出。さてどうなることか。 行った 10/3 レコーディング会場 前日につづいて千葉県にあるレコーディ</description>
+    </item>
+    
     <item>
       <title>20210926 - 20211002の週記</title>
       <link>https://kinoshita-lab.github.io/kazbo/post/2021-10-03-twil/</link>
