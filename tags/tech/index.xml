@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on kazbo memos</title>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/tech/</link>
+    <description>Recent content in tech on kazbo memos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>注意喚起 amazonで買える激安USB MIDIインターフェースは(バラして遊びたい場合以外)オススメしません</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2021-11-05-do-not-recommend-cheap-usb-midi/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2021-11-05-do-not-recommend-cheap-usb-midi/</guid>
+      <description>amazonで販売されている、かなり安い値段のUSB MIDIインターフェースはあまりオススメできないです。 理由は3つあります。 見た目が同じで</description>
+    </item>
+    
+  </channel>
+</rss>

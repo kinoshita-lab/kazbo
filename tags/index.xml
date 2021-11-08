@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tech</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/tech/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>warning</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/warning/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/warning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>this-week-i-learned</title>
       <link>https://kinoshita-lab.github.io/kazbo/tags/this-week-i-learned/</link>
