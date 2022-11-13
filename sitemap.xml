@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/exhivision/</loc>
+    <lastmod>2022-11-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/moids/</loc>
+    <lastmod>2022-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/</loc>
+    <lastmod>2022-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2022-11-13-streaming-heritage-2022%E3%81%A7moids2%E3%82%92%E5%B1%95%E7%A4%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</loc>
+    <lastmod>2022-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/</loc>
+    <lastmod>2022-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
@@ -11,13 +26,7 @@
     <loc>https://kinoshita-lab.github.io/kazbo/post/2022-10-10-moids%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%E3%81%8C%E7%99%BA%E5%A3%B2/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/product/</loc>
-    <lastmod>2022-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/tags/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/post/2022-06-04-midi-uart-ssci/</loc>
@@ -103,9 +112,6 @@
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/work/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/tags/moids/</loc>
-    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/post/2019-10-26-moids-bff/</loc>
     <lastmod>2019-10-26T00:00:00+00:00</lastmod>
