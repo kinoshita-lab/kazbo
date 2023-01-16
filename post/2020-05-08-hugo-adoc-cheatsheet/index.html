@@ -46,8 +46,8 @@
 <meta property="og:title" content="hugo&#43;asciidoc自分用チートシート" />
 <meta name="twitter:title" content="hugo&#43;asciidoc自分用チートシート" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kinoshita-lab.github.io/kazbo/post/2020-05-08-hugo-adoc-cheatsheet/" /><meta property="og:description" content="=== やってみた asciidocそのもので、htmlが書ける。そのうえhugo&#43;themeで書きだすとなった場合、どこで何をしたらいいのか謎。機" />
-<meta name="twitter:description" content="=== やってみた asciidocそのもので、htmlが書ける。そのうえhugo&#43;themeで書きだすとなった場合、どこで何をしたらいいのか謎。機" /><meta property="og:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" />
+<meta property="og:url" content="https://kinoshita-lab.github.io/kazbo/post/2020-05-08-hugo-adoc-cheatsheet/" /><meta property="og:description" content="やってみた asciidocそのもので、htmlが書ける。そのうえhugo&#43;themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能" />
+<meta name="twitter:description" content="やってみた asciidocそのもので、htmlが書ける。そのうえhugo&#43;themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能" /><meta property="og:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" /><meta property="article:published_time" content="2020-05-08T00:00:00+00:00" /><meta property="article:modified_time" content="2020-05-08T00:00:00+00:00" />
 
@@ -139,12 +139,18 @@
     </div>
     
     <div class="post-content markdown-body">
-        === やってみた
-asciidocそのもので、htmlが書ける。そのうえhugo+themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能が大量にあるので、使いそうなものを、色々さぐりつつ、ここにメモる。随時アップデートされる気がする。
-
-とりあえず自分が使いそうなものを調べてみた。
-
-=== 環境的なもの
+        <div class="sect2">
+<h3 id="_やってみた">やってみた</h3>
+<div class="paragraph">
+<p>asciidocそのもので、htmlが書ける。そのうえhugo+themeで書きだすとなった場合、どこで何をしたらいいのか謎。機能が大量にあるので、使いそうなものを、色々さぐりつつ、ここにメモる。随時アップデートされる気がする。</p>
+</div>
+<div class="paragraph">
+<p>とりあえず自分が使いそうなものを調べてみた。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_環境的なもの">環境的なもの</h3>
+<div class="paragraph">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -155,130 +161,225 @@ asciidocそのもので、htmlが書ける。そのうえhugo+themeで書きだ�
 Hugo Static Site Generator v0.69.2/extended linux/amd64 BuildDate: unknown</code></pre></td></tr></table>
 </div>
 </div>
-
-これに、 https://themes.gohugo.io/hugo-notepadium/[notepadium] というテーマを入れた。hugoそのもので何か問題が起きてるのか、テーマの側でなのかとかを本当は気にしたほうがいいような気がする。
-
-=== 最初謎だったこと、基本など
-ヘッダの無い文章は書けないかもしれない。 Front Matterの後に普通に文章を書いてみる。たとえばこんなかんじ。
-....
-tags: 
+</div>
+<div class="paragraph">
+<p>これに、 <a href="https://themes.gohugo.io/hugo-notepadium/">notepadium</a> というテーマを入れた。hugoそのもので何か問題が起きてるのか、テーマの側でなのかとかを本当は気にしたほうがいいような気がする。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_最初謎だったこと基本など">最初謎だったこと、基本など</h3>
+<div class="paragraph">
+<p>ヘッダの無い文章は書けないかもしれない。 Front Matterの後に普通に文章を書いてみる。たとえばこんなかんじ。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>tags:
     - hugo
     - asciidoc
 --- &lt;- ここまでFront Matter
-All your base are belog to us
-....
-これをビルドすると、
-
-----
-post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: <stdin>: line 5: section title out of sequence: expected level 1, got level 2
-post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: <stdin>: line 19: section title out of sequence: expected level 1, got level 2
-post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: <stdin>: line 28: section title out of sequence: expected level 1, got level 2
+All your base are belog to us</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>これをビルドすると、</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: &lt;stdin&gt;: line 5: section title out of sequence: expected level 1, got level 2
+post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: &lt;stdin&gt;: line 19: section title out of sequence: expected level 1, got level 2
+post/2020-05-08-hugo-adoc-cheatsheet.adoc: asciidoctor: WARNING: &lt;stdin&gt;: line 28: section title out of sequence: expected level 1, got level 2
 Rebuild failed:
 
-Logged 3 error(s)
-----
-とかいう結果になってビルドできない。
-
-・・・ という結果になったのだが、ファイルによってはエラーとならない場合もあるようだ。たとえば、https://kinoshita-lab.github.io/kazbo/post/2020-06-25-abc-cable/[このpost] では問題なくヘッダ無しの文章がレンダリングされている。
-
-
-
-あと、この投稿を作るためには、そもそも{{ と }}でくくった内容(Shortcodeというらしい)をエスケープせずに出す、というのが大変だった。 markdownでは可能なようだ。
-https://github.com/gohugoio/hugo/edit/master/docs/content/en/templates/introduction.md[hugoのドキュメント]がそのように構成されているし。
-
-asciidocでそれをやるには、
+Logged 3 error(s)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>とかいう結果になってビルドできない。</p>
+</div>
+<div class="paragraph">
+<p>・・・ という結果になったのだが、ファイルによってはエラーとならない場合もあるようだ。たとえば、https://kinoshita-lab.github.io/kazbo/post/2020-06-25-abc-cable/[このpost] では問題なくヘッダ無しの文章がレンダリングされている。</p>
+</div>
+<div class="paragraph">
+<p>あと、この投稿を作るためには、そもそも{{ と }}でくくった内容(Shortcodeというらしい)をエスケープせずに出す、というのが大変だった。 markdownでは可能なようだ。
+<a href="https://github.com/gohugoio/hugo/edit/master/docs/content/en/templates/introduction.md">hugoのドキュメント</a>がそのように構成されているし。</p>
+</div>
+<div class="paragraph">
+<p>asciidocでそれをやるには、
 <figure><img src="https://gyazo.com/40b7632c167da0e89bfef7039d34a90d.png"/>
 </figure>
 
-こんな感じで /* と */ で Shortcodeの関数的な部分をかこむ。↑を画像でなく、文字で表わせないかという二重にややこしいことを試みる気にはあまりならなかった。。
-
-
-==== ヘッダは3レベルから
-つまり、
-....
-=
-==
-....
-は使えない。入れると上と同じくビルドできない。エラーメッセージ省略。
-
-
-=== 基本的な記法
-==== ヘッダ
-3レベル以下が使える。
-----
-=== あああ
+こんな感じで /* と */ で Shortcodeの関数的な部分をかこむ。↑を画像でなく、文字で表わせないかという二重にややこしいことを試みる気にはあまりならなかった。。</p>
+</div>
+<div class="sect3">
+<h4 id="_ヘッダは3レベルから">ヘッダは3レベルから</h4>
+<div class="paragraph">
+<p>つまり、</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>=
+==</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>は使えない。入れると上と同じくビルドできない。エラーメッセージ省略。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_基本的な記法">基本的な記法</h3>
+<div class="sect3">
+<h4 id="_ヘッダ">ヘッダ</h4>
+<div class="paragraph">
+<p>3レベル以下が使える。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>=== あああ
 ==== いいい
 ===== ううう
-====== えええ
-----
-=== あああ
-==== いいい
-===== ううう
-====== えええ
-
-
-そんなに深く使わないだろうけど。
-
-==== リンク
-----
-https://www.switch-science.com/catalog/5914/[MIDI野郎]
-----
-https://www.switch-science.com/catalog/5914/[MIDI野郎]
-
-==== 箇条書き
-
-----
-* all
+====== えええ</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_あああ">あああ</h3>
+<div class="sect3">
+<h4 id="_いいい">いいい</h4>
+<div class="sect4">
+<h5 id="_ううう">ううう</h5>
+<div class="sect5">
+<h6 id="_えええ">えええ</h6>
+<div class="paragraph">
+<p>そんなに深く使わないだろうけど。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_リンク">リンク</h4>
+<div class="listingblock">
+<div class="content">
+<pre>https://www.switch-science.com/catalog/5914/[MIDI野郎]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://www.switch-science.com/catalog/5914/">MIDI野郎</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_箇条書き">箇条書き</h4>
+<div class="listingblock">
+<div class="content">
+<pre>* all
 * your
 * base
  ** are
   *** belong
    **** to
-     ***** us
-----
-* all
-* your
-* base
- ** are
-  *** belong
-   **** to
-     ***** us
-
-==== そのまま出てほしいやつ
-asciidocの機能を使う。
-
+     ***** us</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>all</p>
+</li>
+<li>
+<p>your</p>
+</li>
+<li>
+<p>base</p>
+<div class="ulist">
+<ul>
+<li>
+<p>are</p>
+<div class="ulist">
+<ul>
+<li>
+<p>belong</p>
+<div class="ulist">
+<ul>
+<li>
+<p>to</p>
+<div class="ulist">
+<ul>
+<li>
+<p>us</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_そのまま出てほしいやつ">そのまま出てほしいやつ</h4>
+<div class="paragraph">
+<p>asciidocの機能を使う。</p>
+</div>
+<div class="paragraph">
 <figure><img src="https://i.gyazo.com/d22bb33177b71c9e105b4b3f6b229b49.png"/>
 </figure>
 
-----
-ここに書く
-----     
-
-==== 細かい使いそうな文字列をいじるやつ
-===== 強調したいとき
-日本語ではイタリックで強調しないような気がするので、太字にするとしたらこんな。太字にしたいところの両側にスペース必要。アスタリスクを二重にすればスペース不要。
-
-
-----
-だるくない *だるい* だるくない
-----
-だるくない *だるい* だるくない
-
-----
-だるくない**実はだるい**だるくない
-----
-だるくない**実はだるい**だるくない
-
-===== 消したいとき
-微妙に特殊だった(markdown比)。
-
-----
-[line-through]#いつもとてもやるきがある#
-----
-[line-through]#いつもとてもやるきがある#
-
-線が表示されなかったので、cssに以下追加。
-
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>ここに書く</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_細かい使いそうな文字列をいじるやつ">細かい使いそうな文字列をいじるやつ</h4>
+<div class="sect4">
+<h5 id="_強調したいとき">強調したいとき</h5>
+<div class="paragraph">
+<p>日本語ではイタリックで強調しないような気がするので、太字にするとしたらこんな。太字にしたいところの両側にスペース必要。アスタリスクを二重にすればスペース不要。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>だるくない *だるい* だるくない</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>だるくない <strong>だるい</strong> だるくない</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>だるくない**実はだるい**だるくない</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>だるくない<strong>実はだるい</strong>だるくない</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_消したいとき">消したいとき</h5>
+<div class="paragraph">
+<p>微妙に特殊だった(markdown比)。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[line-through]#いつもとてもやるきがある#</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="line-through">いつもとてもやるきがある</span></p>
+</div>
+<div class="paragraph">
+<p>線が表示されなかったので、cssに以下追加。</p>
+</div>
+<div class="paragraph">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -291,61 +392,110 @@ asciidocの機能を使う。
 <span class="p">}</span></code></pre></td></tr></table>
 </div>
 </div>
-
-
-==== 数式
-asciidocの書き方をすると普通に表示されるようだ。記法はlatex。
-
-----
-latexmath:[\int_0^\infty f(x) dx]
-----
-latexmath:[\int_0^\infty f(x) dx]
-
-----
-[stem,latexmath]
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_数式">数式</h4>
+<div class="paragraph">
+<p>asciidocの書き方をすると普通に表示されるようだ。記法はlatex。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>latexmath:[\int_0^\infty f(x) dx]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>\(\int_0^\infty f(x) dx\)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[stem,latexmath]
 ++++
 \int_0^\infty f(x) dx
-++++
-----
-
-[stem,latexmath]
-++++
-\int_0^\infty f(x) dx
-++++
-
-=== 表
-こんなかんじで書けば表になる。区切りは | 。 末尾に | は不要。タイトルつけられたりするけどこのレベルのpostでは使わなくていい気がする。空欄にも対応してるっぽいが、
-各行の項目数はそろっている必要がある。
-----
-|===
+++++</pre>
+</div>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\int_0^\infty f(x) dx\]
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_表">表</h3>
+<div class="paragraph">
+<p>こんなかんじで書けば表になる。区切りは | 。 末尾に | は不要。タイトルつけられたりするけどこのレベルのpostでは使わなくていい気がする。空欄にも対応してるっぽいが、
+各行の項目数はそろっている必要がある。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>|===
 |a|b|c|d|e|f|g
 |h|i|j|k|l|m||
-|===
-----
-|===
-|a|b|c|d|e|f|g
-|h|i|j|k|l|m||
-|===
+|===</pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;"/>
+<col style="width: 14.2857%;"/>
+<col style="width: 14.2857%;"/>
+<col style="width: 14.2857%;"/>
+<col style="width: 14.2857%;"/>
+<col style="width: 14.2857%;"/>
+<col style="width: 14.2858%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">b</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">f</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">g</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">h</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">i</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">j</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">l</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_ソースコード">ソースコード</h3>
+<div class="paragraph">
+<p>asciidocの方でも対応しているけど、hugo内蔵のChroma+splash?を使うと、色がついたりして良さそう。
+行番号つけるには、 config.tomlで</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[markup.highlight]
+lineNos = true</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ってやる。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; highlight cpp &gt;}}
+#include &lt;iostream&gt;
 
-=== ソースコード
-asciidocの方でも対応しているけど、hugo内蔵のChroma+splash?を使うと、色がついたりして良さそう。
-行番号つけるには、 config.tomlで
-----
-[markup.highlight]
-lineNos = true
-----
-ってやる。
-
-----
-{{&lt; highlight cpp &gt;}}
-#include <iostream>
- 
 auto main() -&gt; int {
     return 0;
 };
-{{&lt; /highlight &gt;}}
-----
-
+{{&lt; /highlight &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -368,25 +518,53 @@ auto main() -&gt; int {
 <span class="p">};</span></code></pre></td></tr></table>
 </div>
 </div>
-
-ハイライト可能な言語の一覧はここにある。
-https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages[List of Chroma Highlighting Languages]
-
-自分が使いそうなのは、
-
-
-|===
-|言語|書くべき内容
-|Bash|bash
-|C|c
-|C++|cpp
-|Common Lisp|lisp
-|Scheme|scheme
-|===
-とりあえずこのくらい。Makefileやリンカスクリプトは無いのか残念。別のハイライタに変えるかも。
-
-==== gist
-変なシマシマが出て謎だけど、Shortcodeでいける。幅はcssで適当に調節した。.gist-file クラスをいじればOK
+</div>
+<div class="paragraph">
+<p>ハイライト可能な言語の一覧はここにある。
+<a href="https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages">List of Chroma Highlighting Languages</a></p>
+</div>
+<div class="paragraph">
+<p>自分が使いそうなのは、</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;"/>
+<col style="width: 50%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">言語</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">書くべき内容</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bash</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C++</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpp</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Common Lisp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lisp</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scheme</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>とりあえずこのくらい。Makefileやリンカスクリプトは無いのか残念。別のハイライタに変えるかも。</p>
+</div>
+<div class="sect3">
+<h4 id="_gist">gist</h4>
+<div class="paragraph">
+<p>変なシマシマが出て謎だけど、Shortcodeでいける。幅はcssで適当に調節した。.gist-file クラスをいじればOK
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -398,45 +576,64 @@ https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlig
   <span class="k">max-width</span><span class="p">:</span> <span class="mi">1024</span><span class="kt">px</span><span class="p">;</span>
 <span class="p">}</span></code></pre></td></tr></table>
 </div>
+</div></p>
 </div>
-----
-{{&lt; gist kinoshita-lab 038354a2b22613ac5ba04f2736324ccd &gt;}}
-----
-
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; gist kinoshita-lab 038354a2b22613ac5ba04f2736324ccd &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
 <script type="application/javascript" src="https://gist.github.com/kinoshita-lab/038354a2b22613ac5ba04f2736324ccd.js"></script>
 
-
-
-
-=== メディア的なもの
-埋め込み系のやつの書き方基本
-----
-++++
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_メディア的なもの">メディア的なもの</h3>
+<div class="paragraph">
+<p>埋め込み系のやつの書き方基本</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>++++
 ここにURLを貼る！
-++++
-----
-
-==== 画像
-Shortcodeでやる。
-
-===== ローカルでやる
-static/images/teensy_ng_connection.png を表示したいときは、
-
-----
-{{&lt; figure src=&#34;//images/teensy_ng_connection.png&#34; &gt;}}
-----
-とやると出る。github pagesがprojectになっている場合(=このサイトがそうだ)、config.tomlの頭の方のルートっぽい所に
-
-----
-canonifyurls = &#34;true&#34;
-----
-とやっておく必要がある。
-
+++++</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_画像">画像</h4>
+<div class="paragraph">
+<p>Shortcodeでやる。</p>
+</div>
+<div class="sect4">
+<h5 id="_ローカルでやる">ローカルでやる</h5>
+<div class="paragraph">
+<p>static/images/teensy_ng_connection.png を表示したいときは、</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; figure src=&#34;//images/teensy_ng_connection.png&#34; &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>とやると出る。github pagesがprojectになっている場合(=このサイトがそうだ)、config.tomlの頭の方のルートっぽい所に</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>canonifyurls = &#34;true&#34;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>とやっておく必要がある。</p>
+</div>
+<div class="paragraph">
 <figure><img src="../../images/teensy_ng_connection.png"/>
 </figure>
 
-
-センタリングされてもあまりうれしくないので修正するかもしれない。-&gt;した。
+</div>
+<div class="paragraph">
+<p>センタリングされてもあまりうれしくないので修正するかもしれない。→した。
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -448,73 +645,99 @@ canonifyurls = &#34;true&#34;
   <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
 <span class="p">}</span></code></pre></td></tr></table>
 </div>
+</div></p>
 </div>
-
-===== gyazo
-生成されるページURLの末尾に.pngつけて、Shortcode。
-
-----
-{{&lt; figure src=&#34;https://gyazo.com/46ee8d9ab21612f5b54dde5033c5621f.png&#34; &gt;}}
-----
-
+</div>
+<div class="sect4">
+<h5 id="_gyazo">gyazo</h5>
+<div class="paragraph">
+<p>生成されるページURLの末尾に.pngつけて、Shortcode。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; figure src=&#34;https://gyazo.com/46ee8d9ab21612f5b54dde5033c5621f.png&#34; &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
 <figure><img src="https://gyazo.com/46ee8d9ab21612f5b54dde5033c5621f.png"/>
 </figure>
 
-
-==== youtube
-Shortcodeでやるとドキュメントの幅いっぱいになってしまうようだ。
-ここはasciidocの埋め込みが良さそう。
-
-----
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_youtube">youtube</h4>
+<div class="paragraph">
+<p>Shortcodeでやるとドキュメントの幅いっぱいになってしまうようだ。
+ここはasciidocの埋め込みが良さそう。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/i9aPY7yWmTg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</pre>
+</div>
+</div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i9aPY7yWmTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-----
-
-++++
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i9aPY7yWmTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-++++
-==== soundcloud
-埋めこみ。
-まあこれも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%
-
-----
+</div>
+<div class="sect3">
+<h4 id="_soundcloud">soundcloud</h4>
+<div class="paragraph">
+<p>埋めこみ。
+まあこれも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;iframe width=&#34;50%&#34; height=&#34;300&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; allow=&#34;autoplay&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/113815988&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true&#34;&gt;&lt;/iframe&gt;</pre>
+</div>
+</div>
 <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/113815988&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
-----
-
-++++
-<iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/113815988&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
-++++
-==== mixcloud
-これも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%
-
-----
+</div>
+<div class="sect3">
+<h4 id="_mixcloud">mixcloud</h4>
+<div class="paragraph">
+<p>これも埋めこみでいいんだけど、幅が100%なので適当に狭くしたほうがいいかも。これは50%</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;iframe width=&#34;50%&#34; height=&#34;120&#34; src=&#34;https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;feed=%2Fsaita-kazuki%2Fpop-sounds-museum-bbq-rave-kitchen-mediterraneo-casa-tsudanuma-20190730%2F&#34; frameborder=&#34;0&#34; &gt;&lt;/iframe&gt;</pre>
+</div>
+</div>
 <iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;feed=%2Fsaita-kazuki%2Fpop-sounds-museum-bbq-rave-kitchen-mediterraneo-casa-tsudanuma-20190730%2F" frameborder="0"></iframe>
-----
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sns系">SNS系</h3>
+<div class="sect3">
+<h4 id="_twitter">twitter</h4>
+<div class="paragraph">
+<p>Shortcodeでやる。tweetを個別に表示してそのURLの末尾を貼りつける。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{{&lt; tweet 1253156914503888897 &gt;}}</pre>
+</div>
+</div>
+<div class="paragraph">
 
-++++
-<iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;feed=%2Fsaita-kazuki%2Fpop-sounds-museum-bbq-rave-kitchen-mediterraneo-casa-tsudanuma-20190730%2F" frameborder="0"></iframe>
-++++
-
-=== SNS系
-==== twitter
-Shortcodeでやる。tweetを個別に表示してそのURLの末尾を貼りつける。
-----
-{{&lt; tweet 1253156914503888897 &gt;}}
-----
-
-
-
-choromeにduckduckgoのextension入れてるとうまく表示されない。オプションで &#34;Show Embedded Tweets&#34;をOnにすると見えるようになる。
-
-==== instagram
-埋め込みが長大なコードなので、Shortcodeでやろうと思う。ちょっと幅がでかい。要改造な気がする。
+</div>
+<div class="paragraph">
+<p>choromeにduckduckgoのextension入れてるとうまく表示されない。オプションで &#34;Show Embedded Tweets&#34;をOnにすると見えるようになる。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_instagram">instagram</h4>
+<div class="paragraph">
+<p>埋め込みが長大なコードなので、Shortcodeでやろうと思う。ちょっと幅がでかい。要改造な気がする。
 画像をブラウザで表示してそのURLの末尾を貼りつける。
 
 
+</p>
+</div>
+<div class="paragraph">
+<p>choromeにduckduckgoのextension入れてるとうまく表示されない。こちらはどうしようもないかも。</p>
+</div>
+</div>
+</div>
 
-
-choromeにduckduckgoのextension入れてるとうまく表示されない。こちらはどうしようもないかも。
-
-</iostream></stdin></stdin></stdin>
     </div>
 </article>
 

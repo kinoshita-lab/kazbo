@@ -46,8 +46,8 @@
 <meta property="og:title" content="SNSに書いて終わりにするのをやめようと思った" />
 <meta name="twitter:title" content="SNSに書いて終わりにするのをやめようと思った" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kinoshita-lab.github.io/kazbo/post/2020-05-06-moved-a-little-from-sns-to-this-site/" /><meta property="og:description" content="=== why &#43;&#43;&#43; なんかこういうのを えせーねすに書いても流れていくよなー とおもったのでもうちょっとメモブログを充実させようという気持ちになった — kaz SAI" />
-<meta name="twitter:description" content="=== why &#43;&#43;&#43; なんかこういうのを えせーねすに書いても流れていくよなー とおもったのでもうちょっとメモブログを充実させようという気持ちになった — kaz SAI" /><meta property="og:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" />
+<meta property="og:url" content="https://kinoshita-lab.github.io/kazbo/post/2020-05-06-moved-a-little-from-sns-to-this-site/" /><meta property="og:description" content="why なんかこういうのを えせーねすに書いても流れていくよなー とおもったのでもうちょっとメモブログを充実させようという気持ちになった — kaz SAITA" />
+<meta name="twitter:description" content="why なんかこういうのを えせーねすに書いても流れていくよなー とおもったのでもうちょっとメモブログを充実させようという気持ちになった — kaz SAITA" /><meta property="og:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" /><meta property="article:published_time" content="2020-05-06T00:00:00+00:00" /><meta property="article:modified_time" content="2020-05-06T00:00:00+00:00" />
 
@@ -139,40 +139,65 @@
     </div>
     
     <div class="post-content markdown-body">
-        === why
+        <div class="sect2">
+<h3 id="_why">why</h3>
+<div class="paragraph">
+<p>
+</p><blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">なんかこういうのを えせーねすに書いても流れていくよなー とおもったのでもうちょっとメモブログを充実させようという気持ちになった</p>— kaz SAITA@禁煙チャレンジ中 (@kazbo) <a href="https://twitter.com/kazbo/status/1257333056932909057?ref_src=twsrc%5Etfw">May 4, 2020</a></blockquote> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p></p>
+</div>
+<div class="paragraph">
+<p>他にもいくつか理由があって、</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>twitterはとにかく文脈みたいなものがまったく共有できない、これが正直ちょっとツラくなってきた。スレッドとかあるけれど、部分的にRTできてしまう。そうやって取りだした部分について話が進んでいってどうにもならなかったりする。</p>
+</li>
+<li>
+<p>最初のと関係あるんだけど、検索してわざわざ変なツッコミ入れてくる人がいる。これ避けるために固有名詞を微妙に変えたり、ひらがなにしたりしてた。けど、そんなこと
+してまで何かをtwitterに書くより、自前の環境あった方がいいのでは？と思った。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_既存のやつ">既存のやつ？</h3>
+<div class="paragraph">
+<p>まとまった文章を書くにはnote、何か技術的なことを書くならqiita、という風潮みたいなものが、2020年5月にはかなりある気がする。そういう所に書いてみたところで、結局はそのサイトが支配する文脈みたいなのがある。個人的には無謬性みたいなのが求められすぎてるのでは？という印象。もっと適当だけど長い文章を書きたいんだ。</p>
+</div>
+<div class="paragraph">
+<p>それと別で、私個人にザックリとバインドされた文脈がありつつ、日々の何かを文字にしたい。しかもある程度、公開しうる個人メモとしての完成度のようなものを自分が意識するプラットフォームって何よ？となると結局はDIYするのがよさそうだと思う。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jekyll_hugo">jekyll → hugo</h3>
+<div class="paragraph">
+<p>どれほどの意味があったのか、正直わからないが気分転換もかねてjekyllからhugoに移行した。
+hugoの方が細かくいじれそう、というのと長期的にここの記事を増やそうと思っているのでビルド時間が短いほうがいいだろう、というあたりを気にしてみた。</p>
+</div>
+<div class="paragraph">
+<p>移行は簡単なようで結構大変だった。記事数が少なくて助かった。これ以上多かったら何かしらの工夫が必要だと思う。
+hugoのテーマのレイアウトが部分的に気にいらなかったりするので、そのあたりはチョイチョイ修正していこうかな、と思ってる。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_md_adoc">md → adoc</h3>
+<div class="paragraph">
+<p>markdownは素晴しいと思っていたのだけど、gfmとか、微妙に標準化されていなくて方言がある。そうすると何かにロックインされそう、という気持ちになったのでadocに移行することにした。
+<a href="https://github.com/kinoshita-lab/ABC">ABコンバータちゃん</a> のreadmeでは移行していたりする。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_運用的なこと">運用的なこと</h3>
+<div class="paragraph">
+<p>とりあえずザックリ思ったこととかをtwitterに書いて、それをならべて、補完しつつ記録として残せればいいかな？と、今のところ思ってる。そんな感じでしばらくやってみて、ツラくなったらまた別の方法さがすかもしれない。</p>
+</div>
+<div class="paragraph">
+<p>おそらくは各postがどんどん変更されていくと思うので、そんなレベルの確度だと思って読んでください。twitterの長文版的な感じです。技術的なことでも、検証が甘いものや、再現性が低い内容が多くなる気がする。そんな感じで読んでくださるとありがたいです。</p>
+</div>
+</div>
 
-+++
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">なんかこういうのを えせーねすに書いても流れていくよなー とおもったのでもうちょっとメモブログを充実させようという気持ちになった</p>— kaz SAITA@禁煙チャレンジ中 (@kazbo) <a href="https://twitter.com/kazbo/status/1257333056932909057?ref_src=twsrc%5Etfw">May 4, 2020</a></blockquote> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-+++
-
-
-他にもいくつか理由があって、
-
-- twitterはとにかく文脈みたいなものがまったく共有できない、これが正直ちょっとツラくなってきた。スレッドとかあるけれど、部分的にRTできてしまう。そうやって取りだした部分について話が進んでいってどうにもならなかったりする。
-- 最初のと関係あるんだけど、検索してわざわざ変なツッコミ入れてくる人がいる。これ避けるために固有名詞を微妙に変えたり、ひらがなにしたりしてた。けど、そんなこと
-してまで何かをtwitterに書くより、自前の環境あった方がいいのでは？と思った。
-
-=== 既存のやつ？
-まとまった文章を書くにはnote、何か技術的なことを書くならqiita、という風潮みたいなものが、2020年5月にはかなりある気がする。そういう所に書いてみたところで、結局はそのサイトが支配する文脈みたいなのがある。個人的には無謬性みたいなのが求められすぎてるのでは？という印象。もっと適当だけど長い文章を書きたいんだ。
-
-それと別で、私個人にザックリとバインドされた文脈がありつつ、日々の何かを文字にしたい。しかもある程度、公開しうる個人メモとしての完成度のようなものを自分が意識するプラットフォームって何よ？となると結局はDIYするのがよさそうだと思う。
-
-
-=== jekyll -&gt; hugo
-どれほどの意味があったのか、正直わからないが気分転換もかねてjekyllからhugoに移行した。
-hugoの方が細かくいじれそう、というのと長期的にここの記事を増やそうと思っているのでビルド時間が短いほうがいいだろう、というあたりを気にしてみた。
-
-移行は簡単なようで結構大変だった。記事数が少なくて助かった。これ以上多かったら何かしらの工夫が必要だと思う。
-hugoのテーマのレイアウトが部分的に気にいらなかったりするので、そのあたりはチョイチョイ修正していこうかな、と思ってる。
-
-=== md -&gt; adoc
-markdownは素晴しいと思っていたのだけど、gfmとか、微妙に標準化されていなくて方言がある。そうすると何かにロックインされそう、という気持ちになったのでadocに移行することにした。
-https://github.com/kinoshita-lab/ABC[ABコンバータちゃん] のreadmeでは移行していたりする。
-
-=== 運用的なこと
-とりあえずザックリ思ったこととかをtwitterに書いて、それをならべて、補完しつつ記録として残せればいいかな？と、今のところ思ってる。そんな感じでしばらくやってみて、ツラくなったらまた別の方法さがすかもしれない。
-
-おそらくは各postがどんどん変更されていくと思うので、そんなレベルの確度だと思って読んでください。twitterの長文版的な感じです。技術的なことでも、検証が甘いものや、再現性が低い内容が多くなる気がする。そんな感じで読んでくださるとありがたいです。
     </div>
 </article>
 
