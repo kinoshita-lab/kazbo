@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.111.3">
 
 
 <link rel="apple-touch-icon" sizes="57x57" href="../../apple-icon-57x57.png">
@@ -143,14 +143,14 @@
 <p>仕事がとてもいそがしくてあまり自分の学びが無い週だった。</p>
 <h3 id="macのjuceのメニュー">macのjuceのメニュー</h3>
 <p>これじゃ日本語はまともに取りあつかえない。
-<a href="https://github.com/juce-framework/JUCE/blob/6.1.2/modules/juce_gui_basics/native/juce_mac_MainMenu.mm#L687-L696">https://github.com/juce-framework/JUCE/blob/6.1.2/modules/juce_gui_basics/native/juce_mac_MainMenu.mm#L687-L696</a></p>
+<a href="https://github.com/juce-framework/JUCE/blob/6.1.2/modules/juce_gui_basics/native/juce_mac_MainMenu.mm#L687-L696" target="_blank">https://github.com/juce-framework/JUCE/blob/6.1.2/modules/juce_gui_basics/native/juce_mac_MainMenu.mm#L687-L696</a></p>
 <p>どうするか？ だけど日本語の場合、全部削除して入れなおすしかない。</p>
 <p>たとえばこんなかんじ。
 translateMenuNameとかはjuceのオリジナルをコピペして使用。
 TRANSマクロを使うのでそのあたりの下準備は別途やっておく。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -178,39 +178,37 @@ TRANSマクロを使うのでそのあたりの下準備は別途やっておく
 </span><span class="lnt">26
 </span><span class="lnt">27
 </span><span class="lnt">28
-</span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span> <span class="p">(</span><span class="n">SystemStats</span><span class="o">::</span><span class="n">getUserLanguage</span><span class="p">()</span> <span class="o">==</span> <span class="p">(</span><span class="sa">L</span><span class="s">&#34;ja&#34;</span><span class="p">))</span> <span class="p">{</span>
-         <span class="k">return</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="c1">// 全削除
-</span><span class="c1"></span><span class="n">NSMenu</span> <span class="o">*</span><span class="n">mainMenu</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSApplication</span> <span class="n">sharedApplication</span><span class="p">]</span> <span class="n">mainMenu</span><span class="p">];</span>
-<span class="n">NSMenu</span> <span class="o">*</span><span class="n">appMenu</span> <span class="o">=</span> <span class="p">[[</span><span class="n">mainMenu</span> <span class="nl">itemAtIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="n">submenu</span><span class="p">];</span>
-<span class="p">[</span><span class="n">appMenu</span> <span class="n">removeAllItems</span><span class="p">];</span>
-
-<span class="c1">// 日本語化したものを追加
-</span><span class="c1"></span><span class="n">NSMenuItem</span><span class="o">*</span> <span class="n">services</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">NSMenuItem</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithTitle</span><span class="p">:</span> <span class="n">translateMenuName</span> <span class="p">(</span><span class="s">&#34;Mac_Menu_Services&#34;</span><span class="p">)</span>
-                                                           <span class="nl">action</span><span class="p">:</span> <span class="n">nil</span>  <span class="nl">keyEquivalent</span><span class="p">:</span> <span class="n">nsEmptyString</span><span class="p">()]</span> <span class="n">autorelease</span><span class="p">];</span>
-<span class="p">[</span><span class="n">appMenu</span> <span class="nl">addItem</span><span class="p">:</span> <span class="n">services</span><span class="p">];</span>
-
-<span class="n">NSMenu</span><span class="o">*</span> <span class="n">servicesMenu</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">NSMenu</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithTitle</span><span class="p">:</span> <span class="n">translateMenuName</span> <span class="p">(</span><span class="s">&#34;Mac_Menu_Services&#34;</span><span class="p">)]</span> <span class="n">autorelease</span><span class="p">];</span>
-<span class="p">[</span><span class="n">appMenu</span> <span class="nl">setSubmenu</span><span class="p">:</span> <span class="n">servicesMenu</span> <span class="nl">forItem</span><span class="p">:</span> <span class="n">services</span><span class="p">];</span>
-<span class="p">[</span><span class="n">NSApp</span> <span class="nl">setServicesMenu</span><span class="p">:</span> <span class="n">servicesMenu</span><span class="p">];</span>
-<span class="p">[</span><span class="n">appMenu</span> <span class="nl">addItem</span><span class="p">:</span> <span class="p">[</span><span class="n">NSMenuItem</span> <span class="n">separatorItem</span><span class="p">]];</span>
-
-<span class="n">reateMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Hide&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">hide</span><span class="p">:),</span> <span class="n">nsStringLiteral</span> <span class="p">(</span><span class="s">&#34;h&#34;</span><span class="p">));</span>
-
-<span class="p">[</span><span class="n">createMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Hide_Others&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">hideOtherApplications</span><span class="p">:),</span> <span class="n">nsStringLiteral</span> <span class="p">(</span><span class="s">&#34;h&#34;</span><span class="p">))</span>
-<span class="nl">setKeyEquivalentModifierMask</span><span class="p">:</span> <span class="n">NSEventModifierFlagCommand</span> <span class="o">|</span> <span class="n">NSEventModifierFlagOption</span><span class="p">];</span>
-
-<span class="n">createMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Show_All&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">unhideAllApplications</span><span class="p">:),</span> <span class="n">nsEmptyString</span><span class="p">());</span>
-
-<span class="p">[</span><span class="n">appMenu</span> <span class="nl">addItem</span><span class="p">:</span> <span class="p">[</span><span class="n">NSMenuItem</span> <span class="n">separatorItem</span><span class="p">]];</span>
-
-<span class="n">createMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Quit&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">terminate</span><span class="p">:),</span> <span class="n">nsStringLiteral</span> <span class="p">(</span><span class="s">&#34;q&#34;</span><span class="p">));</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">SystemStats</span><span class="o">::</span><span class="n">getUserLanguage</span><span class="p">()</span> <span class="o">==</span> <span class="p">(</span><span class="sa">L</span><span class="s">&#34;ja&#34;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 全削除
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">NSMenu</span> <span class="o">*</span><span class="n">mainMenu</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSApplication</span> <span class="n">sharedApplication</span><span class="p">]</span> <span class="n">mainMenu</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">NSMenu</span> <span class="o">*</span><span class="n">appMenu</span> <span class="o">=</span> <span class="p">[[</span><span class="n">mainMenu</span> <span class="nl">itemAtIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="n">submenu</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">appMenu</span> <span class="n">removeAllItems</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 日本語化したものを追加
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">NSMenuItem</span><span class="o">*</span> <span class="n">services</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">NSMenuItem</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithTitle</span><span class="p">:</span> <span class="n">translateMenuName</span> <span class="p">(</span><span class="s">&#34;Mac_Menu_Services&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                                           <span class="nl">action</span><span class="p">:</span> <span class="n">nil</span>  <span class="nl">keyEquivalent</span><span class="p">:</span> <span class="n">nsEmptyString</span><span class="p">()]</span> <span class="n">autorelease</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">appMenu</span> <span class="nl">addItem</span><span class="p">:</span> <span class="n">services</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">NSMenu</span><span class="o">*</span> <span class="n">servicesMenu</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">NSMenu</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithTitle</span><span class="p">:</span> <span class="n">translateMenuName</span> <span class="p">(</span><span class="s">&#34;Mac_Menu_Services&#34;</span><span class="p">)]</span> <span class="n">autorelease</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">appMenu</span> <span class="nl">setSubmenu</span><span class="p">:</span> <span class="n">servicesMenu</span> <span class="nl">forItem</span><span class="p">:</span> <span class="n">services</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">NSApp</span> <span class="nl">setServicesMenu</span><span class="p">:</span> <span class="n">servicesMenu</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">appMenu</span> <span class="nl">addItem</span><span class="p">:</span> <span class="p">[</span><span class="n">NSMenuItem</span> <span class="n">separatorItem</span><span class="p">]];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">reateMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Hide&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">hide</span><span class="p">:),</span> <span class="n">nsStringLiteral</span> <span class="p">(</span><span class="s">&#34;h&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">createMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Hide_Others&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">hideOtherApplications</span><span class="p">:),</span> <span class="n">nsStringLiteral</span> <span class="p">(</span><span class="s">&#34;h&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nl">setKeyEquivalentModifierMask</span><span class="p">:</span> <span class="n">NSEventModifierFlagCommand</span> <span class="o">|</span> <span class="n">NSEventModifierFlagOption</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">createMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Show_All&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">unhideAllApplications</span><span class="p">:),</span> <span class="n">nsEmptyString</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">appMenu</span> <span class="nl">addItem</span><span class="p">:</span> <span class="p">[</span><span class="n">NSMenuItem</span> <span class="n">separatorItem</span><span class="p">]];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">createMenuItem</span> <span class="p">(</span><span class="n">appMenu</span><span class="p">,</span> <span class="n">TRANS</span><span class="p">(</span><span class="s">&#34;Mac_Menu_Quit&#34;</span><span class="p">),</span> <span class="err">@</span><span class="n">selector</span> <span class="p">(</span><span class="nl">terminate</span><span class="p">:),</span> <span class="n">nsStringLiteral</span> <span class="p">(</span><span class="s">&#34;q&#34;</span><span class="p">));</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="倉庫兼事務所の進展">倉庫兼事務所の進展</h2>
 <p>なんとなく<a href="https://peraichi.com/landing_pages/view/necobit" target="_blank">necobit</a>さんの<a href="https://www.kadenken.com/view/item/000000001261" target="_blank">ゲーミング仕様ドでか消臭剤BASE </a>を設置。
@@ -269,6 +267,10 @@ TRANSマクロを使うのでそのあたりの下準備は別途やっておく
             
             <li>
                 <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://mastodon.cloud/@kazbo" target="_blank"><span>Mastodon</span></a>
             </li>
             
         </ul>
@@ -427,6 +429,10 @@ TRANSマクロを使うのでそのあたりの下準備は別途やっておく
             
             <li>
                 <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://mastodon.cloud/@kazbo" target="_blank"><span>Mastodon</span></a>
             </li>
             
         </ul>

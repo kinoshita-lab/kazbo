@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.111.3">
 
 
 <link rel="apple-touch-icon" sizes="57x57" href="../../apple-icon-57x57.png">
@@ -157,7 +157,7 @@
 上のDAC0, 1の両方から音を出すには、例えばこのような感じにすればいいようだ。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -196,43 +196,43 @@
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// ここから↓
-</span><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;Audio.h&gt;</span><span class="cp">
-</span><span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp">
-</span><span class="cp">#include</span> <span class="cpf">&lt;SPI.h&gt;</span><span class="cp">
-</span><span class="cp">#include</span> <span class="cpf">&lt;SD.h&gt;</span><span class="cp">
-</span><span class="cp">#include</span> <span class="cpf">&lt;SerialFlash.h&gt;</span><span class="cp">
-</span><span class="cp"></span>
-<span class="c1">// GUItool: begin automatically generated code
-</span><span class="c1"></span><span class="n">AudioSynthWaveformSine</span>   <span class="n">sine1</span><span class="p">;</span>          <span class="c1">//xy=333,282
-</span><span class="c1"></span><span class="n">AudioSynthWaveformSine</span>   <span class="n">sine2</span><span class="p">;</span>          <span class="c1">//xy=346,361
-</span><span class="c1"></span><span class="n">AudioOutputAnalogStereo</span>  <span class="n">dacs1</span><span class="p">;</span>          <span class="c1">//xy=659,282
-</span><span class="c1"></span><span class="n">AudioConnection</span>          <span class="nf">patchCord1</span><span class="p">(</span><span class="n">sine1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dacs1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-<span class="n">AudioConnection</span>          <span class="nf">patchCord2</span><span class="p">(</span><span class="n">sine2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dacs1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-<span class="c1">// GUItool: end automatically generated code
-</span><span class="c1">// ここまではツールがはきだすコード
-</span><span class="c1"></span>
-<span class="k">auto</span> <span class="nf">setup</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">void</span> <span class="p">{</span>     
-    <span class="n">AudioMemory</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span> <span class="c1">// ここの数値が何を意味しているのか不明。10とか15とか。
-</span><span class="c1"></span>    
-    <span class="n">AudioNoInterrupts</span><span class="p">();</span> <span class="c1">// Audioの割り込みを止める
-</span><span class="c1"></span>    
-    <span class="c1">// DAC0側につないだsineの設定
-</span><span class="c1"></span>    <span class="n">sine1</span><span class="p">.</span><span class="n">amplitude</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span> 
-    <span class="n">sine1</span><span class="p">.</span><span class="n">frequency</span><span class="p">(</span><span class="mf">440.0</span><span class="p">);</span>
-    <span class="n">sine1</span><span class="p">.</span><span class="n">phase</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-    <span class="c1">// DAC1側につないだsineの設定
-</span><span class="c1"></span>    <span class="n">sine2</span><span class="p">.</span><span class="n">amplitude</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
-    <span class="n">sine2</span><span class="p">.</span><span class="n">frequency</span><span class="p">(</span><span class="mf">880.0</span><span class="p">);</span>
-    <span class="n">sine2</span><span class="p">.</span><span class="n">phase</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-    <span class="n">AudioInterrupts</span><span class="p">();</span> <span class="c1">// Audioの割り込み再開
-</span><span class="c1"></span><span class="p">}</span>
-
-<span class="k">auto</span> <span class="nf">loop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">void</span> <span class="p">{</span>
-    <span class="c1">// ここでやることは特にない
-</span><span class="c1"></span><span class="p">}</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// ここから↓
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;Audio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SPI.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SD.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SerialFlash.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// GUItool: begin automatically generated code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">AudioSynthWaveformSine</span>   <span class="n">sine1</span><span class="p">;</span>          <span class="c1">//xy=333,282
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">AudioSynthWaveformSine</span>   <span class="n">sine2</span><span class="p">;</span>          <span class="c1">//xy=346,361
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">AudioOutputAnalogStereo</span>  <span class="n">dacs1</span><span class="p">;</span>          <span class="c1">//xy=659,282
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">AudioConnection</span>          <span class="nf">patchCord1</span><span class="p">(</span><span class="n">sine1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dacs1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">AudioConnection</span>          <span class="nf">patchCord2</span><span class="p">(</span><span class="n">sine2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dacs1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// GUItool: end automatically generated code
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ここまではツールがはきだすコード
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="nf">setup</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">void</span> <span class="p">{</span>     
+</span></span><span class="line"><span class="cl">    <span class="n">AudioMemory</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span> <span class="c1">// ここの数値が何を意味しているのか不明。10とか15とか。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="n">AudioNoInterrupts</span><span class="p">();</span> <span class="c1">// Audioの割り込みを止める
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// DAC0側につないだsineの設定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">sine1</span><span class="p">.</span><span class="n">amplitude</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">sine1</span><span class="p">.</span><span class="n">frequency</span><span class="p">(</span><span class="mf">440.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sine1</span><span class="p">.</span><span class="n">phase</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// DAC1側につないだsineの設定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">sine2</span><span class="p">.</span><span class="n">amplitude</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sine2</span><span class="p">.</span><span class="n">frequency</span><span class="p">(</span><span class="mf">880.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sine2</span><span class="p">.</span><span class="n">phase</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">AudioInterrupts</span><span class="p">();</span> <span class="c1">// Audioの割り込み再開
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="nf">loop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">void</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ここでやることは特にない
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 <p>これを書きこんだらサイン波が聞こえた。</p>
@@ -242,7 +242,7 @@
 <li>Serial Monitorのwindowは開きっぱななしにしておいたほうが楽かも</li>
 <li>MsTimer2はTeensyでも使えた。TeensyduinoにもMsTimer2が同梱されているみたいで、コンパイル時に</li>
 </ul>
-<pre><code>Multiple libraries were found for &quot;MsTimer2.h&quot;
+<pre tabindex="0"><code>Multiple libraries were found for &#34;MsTimer2.h&#34;
  Used: /home/kazbo/Arduino/libraries/MsTimer2
  Not used: /usr/share/arduino/hardware/teensy/avr/libraries/MsTimer2
 </code></pre><p>このような警告（のようなもの）が出る。Teensyduino側のものを使っていない。ここは設定方法はあるのだろうか。動作の不具合などはなく、特別困ってはいないので放置。</p>
@@ -285,6 +285,10 @@
             
             <li>
                 <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://mastodon.cloud/@kazbo" target="_blank"><span>Mastodon</span></a>
             </li>
             
         </ul>
@@ -443,6 +447,10 @@
             
             <li>
                 <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://mastodon.cloud/@kazbo" target="_blank"><span>Mastodon</span></a>
             </li>
             
         </ul>
