@@ -7,20 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Sat, 08 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>arduino</title>
-      <link>https://kinoshita-lab.github.io/kazbo/tags/arduino/</link>
-      <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kinoshita-lab.github.io/kazbo/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>kinoshita-lab</title>
       <link>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</link>
-      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</guid>
       <description></description>
@@ -29,9 +20,18 @@
     <item>
       <title>work</title>
       <link>https://kinoshita-lab.github.io/kazbo/tags/work/</link>
-      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://kinoshita-lab.github.io/kazbo/tags/work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/arduino/</link>
+      <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/arduino/</guid>
       <description></description>
     </item>
     

@@ -2,31 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kinoshita-lab.github.io/kazbo/categories/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/categories/post/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/tags/work/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2023/2023-08-02-nact-cai_guo-qian/</loc>
+    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/arduino/</loc>
     <lastmod>2023-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2023-07-08-arduino-atmega-printf/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2023/2023-07-08-arduino-atmega-printf/</loc>
     <lastmod>2023-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/categories/memo/</loc>
     <lastmod>2023-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/tags/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2023/2023-01-16-tokyo-midtown-christmas-tree/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2023-01-16-tokyo-midtown-%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%84%E3%83%AA%E3%83%BC%E5%88%B6%E4%BD%9C%E3%81%AE%E3%81%8A%E6%89%8B%E4%BC%9D%E3%81%84%E3%82%92%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/categories/works/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/tags/work/</loc>
-    <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2022-11-21-shinro-otake-moncheri-repair/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2022/2022-11-21-shinro-otake-moncheri-repair/</loc>
     <lastmod>2022-11-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/exhibition/</loc>
@@ -35,16 +50,19 @@
     <loc>https://kinoshita-lab.github.io/kazbo/tags/moids/</loc>
     <lastmod>2022-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2022-11-13-streaming-heritage-2022%E3%81%A7moids2%E3%82%92%E5%B1%95%E7%A4%BA%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2022/2022-11-13-streaming-heritage-2022-moids2/</loc>
     <lastmod>2022-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2022-10-10-moids%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%E3%81%8C%E7%99%BA%E5%A3%B2/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2022/2022-10-10-moids-album-released/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/product/</loc>
     <lastmod>2022-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2022-06-04-midi-uart-ssci/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2022/2022-06-04-midi-uart-ssci/</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kinoshita-lab.github.io/kazbo/categories/product/</loc>
     <lastmod>2022-06-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/tech/</loc>
@@ -53,40 +71,40 @@
     <loc>https://kinoshita-lab.github.io/kazbo/tags/warning/</loc>
     <lastmod>2021-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-11-05-do-not-recommend-cheap-usb-midi/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-11-05-do-not-recommend-cheap-usb-midi/</loc>
     <lastmod>2021-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-10-17-twil/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-10-17-twil/</loc>
     <lastmod>2021-10-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/this-week-i-learned/</loc>
     <lastmod>2021-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-10-10-twil/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-10-10-twil/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-10-03-twil/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-10-03-twil/</loc>
     <lastmod>2021-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-09-26-twil/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-09-26-twil/</loc>
     <lastmod>2021-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-09-19-twil/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-09-19-twil/</loc>
     <lastmod>2021-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-09-08-twil/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-09-08-twil/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-07-26-midi-guy-sold-out/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-07-26-midi-guy-sold-out/</loc>
     <lastmod>2021-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2021-05-31-midi_guy-start-selling-on-booth/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2021/2021-05-31-midi_guy-start-selling-on-booth/</loc>
     <lastmod>2021-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2020-06-25-abc-cable/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2020/2020-06-25-abc-cable/</loc>
     <lastmod>2020-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2020-12-31-midi-guy-ssci/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2020/2020-12-31-midi-guy-ssci/</loc>
     <lastmod>2020-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/asciidoc/</loc>
@@ -95,7 +113,7 @@
     <loc>https://kinoshita-lab.github.io/kazbo/tags/hugo/</loc>
     <lastmod>2020-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2020-05-08-hugo-adoc-cheatsheet/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2020/2020-05-08-hugo-adoc-cheatsheet/</loc>
     <lastmod>2020-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/about/</loc>
@@ -104,10 +122,10 @@
     <loc>https://kinoshita-lab.github.io/kazbo/tags/site/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2020-05-06-moved-a-little-from-sns-to-this-site/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2020/2020-05-06-moved-a-little-from-sns-to-this-site/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2020-02-12-nisui/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2020/2020-02-12-nisui/</loc>
     <lastmod>2020-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/nts-1/</loc>
@@ -116,52 +134,52 @@
     <loc>https://kinoshita-lab.github.io/kazbo/tags/live/</loc>
     <lastmod>2019-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-11-18-sound_market_vol_0/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-11-18-sound_market_vol_0/</loc>
     <lastmod>2019-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-11-01-shibuya-sky/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-11-01-shibuya-sky/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-10-26-moids-bff/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-10-26-moids-bff/</loc>
     <lastmod>2019-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-10-07-spin-collector/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-10-07-spin-collector/</loc>
     <lastmod>2019-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/dj/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-08-15-dj_mediteraneo/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-08-15-dj_mediteraneo/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-08-15-recent_djs/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-08-15-recent_djs/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-08-04-midi_guy/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-08-04-midi_guy/</loc>
     <lastmod>2019-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/workshop/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-07-07-workshop_fabcafe/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-07-07-workshop_fabcafe/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-06-12-connection_vol_17/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-06-12-connection_vol_17/</loc>
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/solowork/</loc>
     <lastmod>2019-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-04-27-enban/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-04-27-enban/</loc>
     <lastmod>2019-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-03-22-asakusa_stella_dj/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-22-asakusa_stella_dj/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-03-18-kazbo_koiwa/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-18-kazbo_koiwa/</loc>
     <lastmod>2019-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-03-16-bbb_circus_shibuya/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-16-bbb_circus_shibuya/</loc>
     <lastmod>2019-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/bbb/</loc>
@@ -170,13 +188,13 @@
     <loc>https://kinoshita-lab.github.io/kazbo/tags/sicp/</loc>
     <lastmod>2019-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-03-13-sicp_meaning_for_me/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-13-sicp_meaning_for_me/</loc>
     <lastmod>2019-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/teensy/</loc>
     <lastmod>2019-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-03-13-teensy36_initial_audio_setup/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-13-teensy36_initial_audio_setup/</loc>
     <lastmod>2019-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/til/</loc>
@@ -185,76 +203,76 @@
     <loc>https://kinoshita-lab.github.io/kazbo/tags/misc/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2019-03-05-restart/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-05-restart/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2017-06-05-diy/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2017/2017-06-05-diy/</loc>
     <lastmod>2017-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/solo/</loc>
     <lastmod>2017-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2017-03-17-solo/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2017/2017-03-17-solo/</loc>
     <lastmod>2017-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2017-03-08-bbb/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2017/2017-03-08-bbb/</loc>
     <lastmod>2017-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2017-02-18-sharin/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2017/2017-02-18-sharin/</loc>
     <lastmod>2017-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-08-06-bbb-mft/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-08-06-bbb-mft/</loc>
     <lastmod>2016-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-07-28-dj-more/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-07-28-dj-more/</loc>
     <lastmod>2016-07-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-07-22-enban-diy-music/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-07-22-enban-diy-music/</loc>
     <lastmod>2016-07-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/seth/</loc>
     <lastmod>2016-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-07-6-seth/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-07-6-seth/</loc>
     <lastmod>2016-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kinoshita-lab.github.io/kazbo/tags/sharin/</loc>
     <lastmod>2016-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-07-02-sharin-live/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-07-02-sharin-live/</loc>
     <lastmod>2016-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-05-20-sharin-hearts/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-05-20-sharin-hearts/</loc>
     <lastmod>2016-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-04-24-sharin-m3/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-04-24-sharin-m3/</loc>
     <lastmod>2016-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-04-23-sharin-society/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-04-23-sharin-society/</loc>
     <lastmod>2016-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-04-23-cheap-arduino/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-04-23-cheap-arduino/</loc>
     <lastmod>2016-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-04-18-sharin-circuits/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-04-18-sharin-circuits/</loc>
     <lastmod>2016-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-03-20-seth/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-03-20-seth/</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-02-15-sharin-circuits/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-02-15-sharin-circuits/</loc>
     <lastmod>2016-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-01-25-enban-diy-music/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-01-25-enban-diy-music/</loc>
     <lastmod>2016-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-01-25-sharin-society/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-01-25-sharin-society/</loc>
     <lastmod>2016-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-01-19-live-uma-cafe-daisharin/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-01-19-live-uma-cafe-daisharin/</loc>
     <lastmod>2016-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kinoshita-lab.github.io/kazbo/post/2016-01-14-emacs-sicp-setup/</loc>
+    <loc>https://kinoshita-lab.github.io/kazbo/post/2016/2016-01-14-emacs-sicp-setup/</loc>
     <lastmod>2016-01-14T00:00:00+00:00</lastmod>
   </url>
 </urlset>

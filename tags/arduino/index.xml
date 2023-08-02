@@ -10,19 +10,19 @@
     <lastBuildDate>Sat, 08 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ATMega系のArduinoでprintfする方法</title>
-      <link>https://kinoshita-lab.github.io/kazbo/post/2023-07-08-arduino-atmega-printf/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2023/2023-07-08-arduino-atmega-printf/</link>
       <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://kinoshita-lab.github.io/kazbo/post/2023-07-08-arduino-atmega-printf/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2023/2023-07-08-arduino-atmega-printf/</guid>
       <description>いつも忘れるのでメモ。 この、fdevopenを使う方法は、この関数がAVR用のavr-libcでしか定義されていないため、 ESP32やARM</description>
     </item>
     
     <item>
       <title>中華duinoをmac el capitan以降のmac OSで使う方法まとめ</title>
-      <link>https://kinoshita-lab.github.io/kazbo/post/2016-04-23-cheap-arduino/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2016/2016-04-23-cheap-arduino/</link>
       <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kinoshita-lab.github.io/kazbo/post/2016-04-23-cheap-arduino/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2016/2016-04-23-cheap-arduino/</guid>
       <description>激安なarduino互換ボードをmacで使おうとすると、USB&amp;lt;-&amp;gt;シリアル変換のICがオリジナルと違うため、ドライバーを別途イ</description>
     </item>
     

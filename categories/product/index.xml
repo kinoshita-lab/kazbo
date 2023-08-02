@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>product on kazbo memos</title>
+    <link>https://kinoshita-lab.github.io/kazbo/categories/product/</link>
+    <description>Recent content in product on kazbo memos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/categories/product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>「MIDI-UARTインターフェースさん キット」 スイッチサイエンスさんで販売開始しました</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2022/2022-06-04-midi-uart-ssci/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2022/2022-06-04-midi-uart-ssci/</guid>
+      <description>これまで、BOOTHでの試験販売や、楽器slackオフ会/ピコケットなどの実イベントでの販売などをしてきた、「MIDI-UARTインターフェ</description>
+    </item>
+    
+  </channel>
+</rss>

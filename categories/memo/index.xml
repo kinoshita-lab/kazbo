@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>memo on kazbo memos</title>
+    <link>https://kinoshita-lab.github.io/kazbo/categories/memo/</link>
+    <description>Recent content in memo on kazbo memos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Sat, 08 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/categories/memo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATMega系のArduinoでprintfする方法</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2023/2023-07-08-arduino-atmega-printf/</link>
+      <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2023/2023-07-08-arduino-atmega-printf/</guid>
+      <description>いつも忘れるのでメモ。 この、fdevopenを使う方法は、この関数がAVR用のavr-libcでしか定義されていないため、 ESP32やARM</description>
+    </item>
+    
+  </channel>
+</rss>

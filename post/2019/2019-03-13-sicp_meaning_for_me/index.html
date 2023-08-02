@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.115.3">
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="../../../apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../../apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../../apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../../apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../../apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../../apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../../apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../../apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../../../android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../../favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+<link rel="manifest" href="../../../manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#000000">
+
+
+<title>SICPをやったまとめ - kazbo memos</title>
+
+
+<meta name="author" content="kazbo" />
+
+
+<meta name="description" content="kazbo&#39;s memos" />
+
+
+<meta name="keywords" content="sicp, TIL" />
+
+
+<meta property="og:title" content="SICPをやったまとめ" />
+<meta name="twitter:title" content="SICPをやったまとめ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-13-sicp_meaning_for_me/" /><meta property="og:description" content="やりながらメモしたことをとりあえず並べておく。ちょいちょい手なおしが入ると思う。 SICP(Structure and Interpretation of Computer Programs)という技術書がある。 22歳くらい" />
+<meta name="twitter:description" content="やりながらメモしたことをとりあえず並べておく。ちょいちょい手なおしが入ると思う。 SICP(Structure and Interpretation of Computer Programs)という技術書がある。 22歳くらい" /><meta property="og:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://kinoshita-lab.github.io/kazbo/images/logo_card.png" /><meta property="article:published_time" content="2019-03-13T00:00:00+00:00" /><meta property="article:modified_time" content="2019-03-13T00:00:00+00:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://kinoshita-lab.github.io/kazbo/assets/css/fuji.min.css" />
+
+
+
+
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-46054731-1');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46054731-1"></script>
+
+
+
+
+
+</head>
+
+<body
+  data-theme="dark"
+  data-theme-auto='false'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://kinoshita-lab.github.io/kazbo/">kazbo memos</a>
+            
+            <span class="title-sub">whatever can make two ears of corn</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-13-sicp_meaning_for_me/">SICPをやったまとめ</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2019-03-13</span>
+
+
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="../../../tags/sicp">sicp</a>&nbsp;<a href="../../../tags/til">TIL</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>やりながらメモしたことをとりあえず並べておく。ちょいちょい手なおしが入ると思う。</p>
+<p><a href="https://mitpress.mit.edu/sites/default/files/sicp/index.html" target="_blank">SICP(Structure and Interpretation of Computer Programs)</a>という技術書がある。
+22歳くらいの時に名前を知って読みはじめた。その後何度かの中断をはさみ、色々と寄り道をしながら進めていき、昨年の11月くらいに最後まで到達した。
+15年くらいかかったことになる。</p>
+<p>本の内容自体は現在では無料で読める。いくつか日本語訳があるが、個人的にはこれが一番わかりやすかった。
+<a href="https://github.com/hiroshi-manabe/sicp-pdf" target="_blank">hiroshi-manabe/sicp-pdf</a></p>
+<p>あまり整理していないけど、自分が読んで写経したり、問題を解いた形跡は<a href="https://github.com/kinoshita-lab/sicp_study" target="_blank">githubリポジトリに置いてある</a>。
+後半になると問題の難易度が上がっていき、最後の問題(5.52)は半年かかった。本当に大変だったし、何度も諦めかけた。</p>
+<h2 id="sicpをやって得られたこと">SICPをやって得られたこと</h2>
+<p>「勉強とは何か？」について自分なりにわかってきた。
+40手前にして今更感はすごい。ただ、プログラミングに限らない、今後普遍的に役に立つ能力だと思っている。</p>
+<p>プログラミングに対する基本的な態度や考え方。OOPだとか関数型だとか、そういう時代によって変わっていくところではない、問題解決のための心構えのようなもの。
+ここ、あまりうまく説明できない。説明できるようになりたい。</p>
+<h2 id="そのために必要なこと">そのために必要なこと</h2>
+<p>問題を自力で解こうとする。これめちゃくちゃ大事。</p>
+<p><a href="https://sicp.iijlab.net/" target="_blank">日本語のSICPのサイト</a>には<a href="https://sicp.iijlab.net/solution.html" target="_blank">こんなこと</a>が書いてある。理由が書いてないので自分が理解したことが訳者の考えていることと同じかはわからないけど、ある程度今は納得している。</p>
+<p>自力で解く（あるいは少なくともそのような努力をしてみる）ことで、自分の中に適切なメンタルモデルが構築できたか？の検証ができて、
+これが自分にとっては必要な行為だった。
+多くの技術書の類は、確固として存在しているはずの、著者のメンタルモデルをあまり説明しようとはしない。
+そこが理解できていないと、内容を読み進めても頭に入ってこなくなってしまうので、かなり重要だと思っている。個別の内容以前にそこについて教えてほしい。まあ、そう簡単には説明できることではないのかもしれない。</p>
+<p>SICPを単に「読んだ」だけだと、少なくとも問題を解けるようなメンタルモデルの構築に成功したかの検証ができない。
+自分が問題を解くことで得られた考えかたは、著者のものとは異なるかもしれないが、少なくとも問題を解くことはできる、ある程度有効なものができているはずだ。</p>
+<p>なんかそのあたりのことを考えていたときのtweet。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">[SICP] また1つ、見えていなかった何かがわかりつつある。このまま進めば解答できるのだろうか。気づいたけど、解答できたところでその問いに完全に答えることにはならないのだろう。</p>&mdash; kaz SAITA@野生 (@kazbo) <a href="https://twitter.com/kazbo/status/1058327378068295681?ref_src=twsrc%5Etfw">November 2, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="問題をとくためにやったこと">問題をとくためにやったこと</h2>
+<p>SICPの問題は、ものによってはかなり規模が大きいものがある。それを解くにあたっては、こんなことをやってみていた。</p>
+<ul>
+<li>
+<p>「自分が解ける内容に問題を適切に分解できているか？」を検証していく。普遍的ではないが問題の一部分について答えられてるような、回答のプロトタイプを作ってみる。</p>
+</li>
+<li>
+<p>詰まった場合、なんらかの概念を誤解していることが多い。その先の章や節で説明されていることが含まれることもあった。これは初学者には判断できない。著者の気持ちになると、何かを完璧にボトムアップで説明するのはすごく大変で冗長になりそうなので、ある程度は仕方ない。この部分は、先人が身近にいたほうがよかった。</p>
+</li>
+<li>
+<p>本当にわからなくなった場合、紙にペンで図などにをあらわしてみると、見落としてることとか、誤解してることが分かりやすかった。</p>
+</li>
+<li>
+<p>それでも本当にダメで、3日以上悩んだ場合は検索して答えを見ることもあった。ネット上にある回答は（自分のも含め）、本当に正解なのか時々疑問に思うようなものもあった。そのあたりは自分で納得できる回答であるか、内容を良く読んだほうがよい。</p>
+</li>
+</ul>
+<p>これはSICPに限ったことではなく、問題解決にあたっての普遍的な方法なのかもしれない。途中で読んだ「いかにして問題をとくか」が役に立った。</p>
+<h2 id="つまづきやすいポイント">つまづきやすいポイント</h2>
+<p>動作検証ができない問題は、結果がわからないため結構辛い。その先で実装される何か（たとえばインタプリタとか）が実装済みであるという前提で、
+問題が与えられたりすることがチョイチョイある。具体的には</p>
+<ul>
+<li>図形言語(これはracketでやるとよい)</li>
+<li>回路シミュレータ</li>
+<li>evaluator</li>
+<li>compiler</li>
+<li>vm
+あたり。</li>
+</ul>
+<h2 id="その他の感想">その他の感想</h2>
+<ul>
+<li>時間投資効率を重視するのであれば、「3章までを問題を解きつつ進める」というのが良いと思う。大抵の「プログラミング」はこの範囲で十分。</li>
+<li>4章から先は「深淵な何か」みたいなもので、直接役に立つことはあまりないのではと思った。VMをつくりたいとか、言語をつくりたい人には大事かもしれないが、それはもっとよい別の書籍がある気がした。</li>
+<li>schemeは単純に見えるがその実中のほうは結構いろんなことしないといけない。環境とかクロージャとか。というのが実装してみてわかった。</li>
+<li>replの力はすごい。try &amp; errorがものすごい勢いでできる環境。これはハマる。</li>
+</ul>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>ページ</h3>
+        <ul>
+            
+            <li>
+                <a href="../../../">Home</a>
+            </li>
+            
+            <li>
+                <a href="../../../about/">About</a>
+            </li>
+            
+            <li>
+                <a href="../../../index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>リンク</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/kinoshita-lab" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://instagram.com/kazbo" target="_blank"><span>instagram</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://mastodon.cloud/@kazbo" target="_blank"><span>Mastodon</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>タグ</h3>
+        <div>
+            
+            <span>
+                <a href="../../../tags/arduino/">arduino</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/asciidoc/">asciidoc</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/bbb/">BBB</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/dj/">DJ</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/exhibition/">exhibition</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/hugo/">hugo</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/kinoshita-lab/">kinoshita-lab</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/live/">live</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/misc/">misc</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/moids/">moids</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/nts-1/">NTS-1</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/product/">product</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/seth/">seth</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/sharin/">sharin</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/sicp/">sicp</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/site/">site</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/solo/">solo</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/solowork/">solowork</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/tech/">tech</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/teensy/">teensy</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/this-week-i-learned/">this-week-i-learned</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/til/">TIL</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/warning/">warning</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/work/">work</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/workshop/">workshop</a>
+            </span>
+            
+        </div>
+    </div>
+    
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>ページ</h3>
+        <ul>
+            
+            <li>
+                <a href="../../../">Home</a>
+            </li>
+            
+            <li>
+                <a href="../../../about/">About</a>
+            </li>
+            
+            <li>
+                <a href="../../../index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>リンク</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/kinoshita-lab" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://instagram.com/kazbo" target="_blank"><span>instagram</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/kazbo" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://mastodon.cloud/@kazbo" target="_blank"><span>Mastodon</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>タグ</h3>
+        <div>
+            
+            <span>
+                <a href="../../../tags/arduino/">arduino</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/asciidoc/">asciidoc</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/bbb/">BBB</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/dj/">DJ</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/exhibition/">exhibition</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/hugo/">hugo</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/kinoshita-lab/">kinoshita-lab</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/live/">live</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/misc/">misc</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/moids/">moids</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/nts-1/">NTS-1</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/product/">product</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/seth/">seth</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/sharin/">sharin</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/sicp/">sicp</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/site/">site</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/solo/">solo</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/solowork/">solowork</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/tech/">tech</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/teensy/">teensy</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/this-week-i-learned/">this-week-i-learned</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/til/">TIL</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/warning/">warning</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/work/">work</a>
+            </span>
+            
+            <span>
+                <a href="../../../tags/workshop/">workshop</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2023
+                <a href="https://kinoshita-lab.github.io/kazbo/">kazbo</a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="../../../assets/js/fuji.min.645f1123be695831f419ab54c1bcba327325895c740014006e57070d4f3e5d6b553e929c4b46f40ea707249e9c7f7c2a446d32a39ce7319f80a34525586a8e0f.js" integrity="sha512-ZF8RI75pWDH0GatUwby6MnMliVx0ABQAblcHDU8&#43;XWtVPpKcS0b0DqcHJJ6cf3wqRG0yo5znMZ&#43;Ao0UlWGqODw=="></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw==" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha512-aMDiFsrEV3KzAn9EHwyBRS7y1APjZWt/Z/73ukLN2Ca2KcGGzlOQFQSnfOdnEcehpwMaQ8edlDB/0cMX2GsHbg==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" crossorigin="anonymous"></script>
+<script>
+  renderMathInElement(document.querySelector('div.content'), {
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '\\[', right: '\\]', display: true },
+      { left: '$', right: '$', display: false },
+      { left: '\\(', right: '\\)', display: false },
+    ],
+  });
+</script>
+
+
+
+
+</body>
+
+</html>

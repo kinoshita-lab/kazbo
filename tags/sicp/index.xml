@@ -10,19 +10,19 @@
     <lastBuildDate>Wed, 13 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/sicp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SICPをやったまとめ</title>
-      <link>https://kinoshita-lab.github.io/kazbo/post/2019-03-13-sicp_meaning_for_me/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-13-sicp_meaning_for_me/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kinoshita-lab.github.io/kazbo/post/2019-03-13-sicp_meaning_for_me/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2019/2019-03-13-sicp_meaning_for_me/</guid>
       <description>やりながらメモしたことをとりあえず並べておく。ちょいちょい手なおしが入ると思う。 SICP(Structure and Interpretation of Computer Programs)という技術書がある。 22歳くらい</description>
     </item>
     
     <item>
       <title>emacsに引きこもる</title>
-      <link>https://kinoshita-lab.github.io/kazbo/post/2016-01-14-emacs-sicp-setup/</link>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2016/2016-01-14-emacs-sicp-setup/</link>
       <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kinoshita-lab.github.io/kazbo/post/2016-01-14-emacs-sicp-setup/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2016/2016-01-14-emacs-sicp-setup/</guid>
       <description>SICPやるときに色々とアプリケーション切り替えるのがめんどくさい。emacsだけで全部終わればいいのに。 schemeをemacsで使うとき</description>
     </item>
     
