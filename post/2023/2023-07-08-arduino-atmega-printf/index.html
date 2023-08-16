@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.115.3">
+<meta name="generator" content="Hugo 0.117.0">
 
 
 <link rel="apple-touch-icon" sizes="57x57" href="../../../apple-icon-57x57.png">
@@ -166,13 +166,13 @@ ESP32やARMなど他のMCUがベースになっている場合には使えない
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// 名前はなんでもよい
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">my_putc</span><span class="p">(</span> <span class="kt">char</span> <span class="n">c</span><span class="p">,</span> <span class="n">FILE</span> <span class="o">*</span><span class="n">t</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span> <span class="n">c</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span> <span class="n">c</span> <span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">fdevopen</span><span class="p">(</span> <span class="o">&amp;</span><span class="n">myputc</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fdevopen</span><span class="p">(</span> <span class="o">&amp;</span><span class="n">my_putc</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 以降printfが使える。例↓
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">print</span><span class="p">(</span><span class="s">&#34;Hello world! A0 = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">analogRead</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
