@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/categories/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/categories/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>windowsでUSB Serial変換ICにCH340を使ったArduino 互換ボードを使用する際、書き込めないなどの問題が起きた場合の解決方法</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2023/2023-08-17-arduino-compatible-with-ch340/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2023/2023-08-17-arduino-compatible-with-ch340/</guid>
+      <description>TLDR; ドライバを古いバージョン(3.5)にする。 Arduino IDEだと、アップロード時 avrdude: ser_open(): can&amp;#39;t set com-state for &amp;#34;\\.\COM3&amp;#34; などと表示されて、アップロードできない。 Platform IOだと、ア</description>
+    </item>
+    
     <item>
       <title>蔡國強　宇宙遊 ―〈原初火球〉から始まる ちょっとお手伝いしました</title>
       <link>https://kinoshita-lab.github.io/kazbo/post/2023/2023-08-02-nact-cai_guo-qian/</link>
