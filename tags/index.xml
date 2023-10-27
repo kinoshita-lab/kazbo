@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>product</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/product/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/work/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/work/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>event</title>
       <link>https://kinoshita-lab.github.io/kazbo/tags/event/</link>
@@ -23,15 +41,6 @@
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://kinoshita-lab.github.io/kazbo/tags/kinoshita-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>work</title>
-      <link>https://kinoshita-lab.github.io/kazbo/tags/work/</link>
-      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kinoshita-lab.github.io/kazbo/tags/work/</guid>
       <description></description>
     </item>
     
@@ -59,15 +68,6 @@
       <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://kinoshita-lab.github.io/kazbo/tags/moids/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>product</title>
-      <link>https://kinoshita-lab.github.io/kazbo/tags/product/</link>
-      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kinoshita-lab.github.io/kazbo/tags/product/</guid>
       <description></description>
     </item>
     
