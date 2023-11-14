@@ -7,11 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>news</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/news/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/news/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>product</title>
       <link>https://kinoshita-lab.github.io/kazbo/tags/product/</link>
-      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://kinoshita-lab.github.io/kazbo/tags/product/</guid>
       <description></description>
