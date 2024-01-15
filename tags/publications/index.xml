@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>publications on kazbo memos</title>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/publications/</link>
+    <description>Recent content in publications on kazbo memos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卒論を公開します</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2024/2024-01-15-graduationthesis_saita_2004/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2024/2024-01-15-graduationthesis_saita_2004/</guid>
+      <description>こちら 卒業論文 周波数サンプリングFIR フィルタの固定小数点DSP への実装に関する研究(謝辞削除版) なぜ公開するのか 自分が突然死ぬと、自分しか</description>
+    </item>
+    
+  </channel>
+</rss>
