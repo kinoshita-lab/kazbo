@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/publications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>修論を公開します</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2024/2024-01-16-masterthesis_saita_2006/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2024/2024-01-16-masterthesis_saita_2006/</guid>
+      <description>こちら 斉田_2006_修士論文%20自律分散協調システムを用いた%20音響生成装置の制作に関する研究(謝辞削除版) なぜ公開するのか 卒論 と同じ</description>
+    </item>
+    
     <item>
       <title>卒論を公開します</title>
       <link>https://kinoshita-lab.github.io/kazbo/post/2024/2024-01-15-graduationthesis_saita_2004/</link>
