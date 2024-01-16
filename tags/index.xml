@@ -9,11 +9,11 @@
     <copyright>kazbo/kinoshita-lab</copyright>
     <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>dsp</title>
-      <link>https://kinoshita-lab.github.io/kazbo/tags/dsp/</link>
+      <title>moids</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/moids/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://kinoshita-lab.github.io/kazbo/tags/dsp/</guid>
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/moids/</guid>
       <description></description>
     </item>
     
@@ -23,6 +23,15 @@
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://kinoshita-lab.github.io/kazbo/tags/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dsp</title>
+      <link>https://kinoshita-lab.github.io/kazbo/tags/dsp/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/tags/dsp/</guid>
       <description></description>
     </item>
     
@@ -86,15 +95,6 @@
       <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://kinoshita-lab.github.io/kazbo/tags/exhibition/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>moids</title>
-      <link>https://kinoshita-lab.github.io/kazbo/tags/moids/</link>
-      <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kinoshita-lab.github.io/kazbo/tags/moids/</guid>
       <description></description>
     </item>
     
