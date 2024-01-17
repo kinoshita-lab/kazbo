@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>m5stack on kazbo memos</title>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/m5stack/</link>
+    <description>Recent content in m5stack on kazbo memos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/m5stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M5Stackの開発環境 VSCodeで &#34;Add M5Stack&#34;が見えない場合の対処</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2024/2024-01-17-m5stack-add-m5stack-button-does-not-appear-on-vscode-status-bar/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2024/2024-01-17-m5stack-add-m5stack-button-does-not-appear-on-vscode-status-bar/</guid>
+      <description>リンク先に書いてある通り。 【m5go】VScodeの左下に Add M5Stackが出ない時 https://zenn.dev/s3pt3mb3r/articles/54b41a21c1a4e8 肝心のコマンドの実行パスは extentionのroot</description>
+    </item>
+    
+  </channel>
+</rss>
