@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>site info on kazbo&#39; site</title>
+    <link>https://kinoshita-lab.github.io/kazbo/tags/site-info/</link>
+    <description>Recent content in site info on kazbo&#39; site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>kazbo/kinoshita-lab</copyright>
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kinoshita-lab.github.io/kazbo/tags/site-info/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>products</title>
+      <link>https://kinoshita-lab.github.io/kazbo/product/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/product/</guid>
+      <description>製品情報のページ (作業中)</description>
+    </item>
+    
+    <item>
+      <title>public notes というメモサイトを作りました</title>
+      <link>https://kinoshita-lab.github.io/kazbo/post/2024/2024-02-01-public_notes/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://kinoshita-lab.github.io/kazbo/post/2024/2024-02-01-public_notes/</guid>
+      <description>メモ的な内容はこちらに移動、ここは広報的な内容をメインにします。 https://kinoshita-lab.github.io/public_notes/ 現時点でこちらにあるメモ要素強めの内容も、そちらに移動します。</description>
+    </item>
+    
+  </channel>
+</rss>

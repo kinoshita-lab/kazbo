@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>asciidoc on kazbo memos</title>
+    <title>asciidoc on kazbo&#39; site</title>
     <link>https://kinoshita-lab.github.io/kazbo/tags/asciidoc/</link>
-    <description>Recent content in asciidoc on kazbo memos</description>
+    <description>Recent content in asciidoc on kazbo&#39; site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>kazbo/kinoshita-lab</copyright>
